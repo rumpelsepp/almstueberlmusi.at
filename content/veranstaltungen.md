@@ -10,6 +10,41 @@ title: Veranstaltungen
     </thead>
     <tbody>
             <tr>
+            <td>7.12.2025</td>
+            <td>5550 Radstadt</td>
+                            <td>Adventkonzert</td>
+                    </tr>
+            <tr>
+            <td>25.10.2025</td>
+            <td>5500 Bischofshofen</td>
+                            <td>Hochzeit (privat)</td>
+                    </tr>
+            <tr>
+            <td>18.10.2025</td>
+            <td>5661 Rauris</td>
+                            <td>Hochzeit (privat)</td>
+                    </tr>
+            <tr>
+            <td>20.09.2025</td>
+            <td>5542 Flachau</td>
+                            <td>Musikantenstammtisch</td>
+                    </tr>
+            <tr>
+            <td>06.07.2025</td>
+            <td>5524 Annaberg im Lammertal</td>
+                            <td><a href="https://www.dachstein.at/de/aktuelles/events/alm-musi-roas">Alm-Musi-Roas: Rottenhofhütte</a></td>
+                    </tr>
+            <tr>
+            <td>28.06.2025</td>
+            <td>5020 Salzburg</td>
+                            <td><a href="https://www.salzburgervolksliedwerk.at/termine/detail?tx_calendarize_calendar%5Baction%5D=detail&tx_calendarize_calendar%5Bcontroller%5D=Calendar&tx_calendarize_calendar%5Bindex%5D=103822&cHash=3b0ade89f12374e9bdde86e47b10ff89">Salzburger Straßenmusik</a></td>
+                    </tr>
+            <tr>
+            <td>28.06.2025</td>
+            <td>5611 Großarl</td>
+                            <td>Hochzeit (privat)</td>
+                    </tr>
+            <tr>
             <td>15.12.2024</td>
             <td>5451 Tenneck</td>
                             <td>Adventkonzert</td>
@@ -42,7 +77,7 @@ title: Veranstaltungen
             <tr>
             <td>07.06.2024</td>
             <td>5524 Annaberg im Lammertal</td>
-                            <td><a href="https://www.rottenhofhuette.at/">Rottenhofalm</a></td>
+                            <td><a href="https://www.rottenhofhuette.at/">Rottenhofhütte</a></td>
                     </tr>
             <tr>
             <td>17.05.2024</td>

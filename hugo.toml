@@ -38,6 +38,12 @@ title = 'Almstüberl Musi'
     url = "impressum"
     weight = 20
 
+    [[menu.main]]
+    identifier = "über-uns"
+    name = "Über uns"
+    url = "über-uns"
+    weight = 30
+
   [markup.goldmark.renderer]
     unsafe = true
 
