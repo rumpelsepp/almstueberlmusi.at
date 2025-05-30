@@ -1,5 +1,5 @@
 ---
-title: Veranstaltungen 🎉💃
+title: Veranstaltungen
 ---
 
 <table class="table">

@@ -1,5 +1,5 @@
 ---
-title: "Almstüberl Musi 🎶"
+title: "Almstüberl Musi"
 ---
 
 {{< fig src="avatar-raw.jpg" class="text-center" size="600x600" >}}
