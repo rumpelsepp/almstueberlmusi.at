@@ -13,7 +13,7 @@ Wenn ihr Lust habt uns zu hören, freuen wir uns, wenn ihr [hier](https://kontak
 Aufgenommen haben wir die folgenden Stücke: 
 - Lustig uma draht (Peter Züger) -- *Stubnmusi-Besetzung*
 - I hob a Dianei gliabt (Volksweise) -- *Stubnmusi-Besetzung*
-- A blaus Auto (Gottfried Hartl) -- *Saitenmusi-Besetzung*
+- A blaus Auto ([Gottfried Hartl](https://www.gottfried-hartl.net/startseite.html)) -- *Saitenmusi-Besetzung*
 
 ## Wo wir spielen
 Die Almstüberl Musi eignet sich perfekt, um Feierlichkeiten wie Hochzeiten oder Geburtstagsfeiern musikalisch zu umrahmen. Wir sorgen gerne für gemütliche Unterhaltung oder übernehmen gerne die musikalische Gestaltung der Trauung. 
