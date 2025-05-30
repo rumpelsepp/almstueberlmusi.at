@@ -25,8 +25,6 @@
     {{- $attrs := dict "href" .URL "class" "nav-link" }}
       {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
       {{ $active = or $active (eq .Name $current.Title) }}
-      {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
-      {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
     
     <!-- TODO: https://discourse.gohugo.io/t/another-way-to-make-a-menu-item-active/17029/14 -->
     {{- if $active }}

@@ -1,5 +1,5 @@
 ---
-title: Bildergalerie
+title: Galerie
 ---
 Hier findet ihr einige Impressionen von der Almstüberl Musi im Einsatz.
 
