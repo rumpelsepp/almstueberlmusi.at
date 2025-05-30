@@ -3,7 +3,7 @@ title: Galerie
 ---
 Hier findet ihr einige Impressionen von der Almstüberl Musi im Einsatz.
 
-{{< fig src="avatar-raw.jpg" size="600x600" caption="Unterwegs als Salzburger Straßenmusikanten 2024">}}
+{{< fig src="avatar-raw.jpg" size="800x800" caption="Unterwegs als Salzburger Straßenmusikanten 2024">}}
 
 Manchmal treffen wir bei unseren Auftritten ganz besondere Menschen. So zum Beispiel haben wir uns sehr gefreut, dass [Christian Schartner](http://www.christian-schartner.at/), der wirklich unfassbar schöne Bilder macht von der Welt, wie er sie wahrnimmt . Danke, dass du auch uns so schön aussehen lässt!
 
