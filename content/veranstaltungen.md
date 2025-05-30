@@ -10,7 +10,7 @@ title: Veranstaltungen
     </thead>
     <tbody>
             <tr>
-            <td>7.12.2025</td>
+            <td>07.12.2025</td>
             <td>5550 Radstadt</td>
                             <td>Adventkonzert</td>
                     </tr>

@@ -36,4 +36,4 @@ podman-pull:
     podman pull ghcr.io/gohugoio/hugo:latest
 
 update-events:
-    ./scripts/dump-events.py > content/veranstaltungen.md
+    ./scripts/update-events.py > content/veranstaltungen.md

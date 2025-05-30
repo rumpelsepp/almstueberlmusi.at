@@ -1,13 +1,20 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run -qs
+
+# /// script
+# requires-python = ">=3.13"
+# dependencies = [
+#     "jinja2",
+#     "openpyxl",
+# ]
+# ///
 
 import csv
 from datetime import datetime
 from typing import Any
 
-import httpx
+import openpyxl
 import jinja2
 
-UPSTREAM_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQcMg0_gHNudEnG0JYJuUyojcy84i4H_MZSFkogYyTfy4-pF57AF6ofghp7Hz1EkdXsqGlqLqovPAjv/pub?output=csv"
 TPL = """---
 title: Veranstaltungen
 ---
@@ -21,7 +28,7 @@ title: Veranstaltungen
     <tbody>
     {% for event in events %}
         <tr>
-            <td>{{ event.date }}</td>
+            <td>{{ event.date.strftime('%d.%m.%Y') }}</td>
             <td>{{ event.location }}</td>
             {% if event.url %}
                 <td><a href="{{ event.url }}">{{ event.details }}</a></td>
@@ -35,12 +42,15 @@ title: Veranstaltungen
 """
 
 
-def fetch_sheet(url: str) -> list[dict[str, Any]]:
-    with httpx.Client(follow_redirects=True) as client:
-        r = client.get(url)
-        r.raise_for_status()
-        out = csv.DictReader(r.text.splitlines(), delimiter=",", quotechar='"')
-        return sorted(out, key=lambda x: datetime.strptime(x["date"], "%d.%m.%Y"), reverse=True)
+def read_sheet() -> list[dict[str, Any]]:
+    workbook = openpyxl.load_workbook('termine.xlsx')
+    sheet = workbook.active
+    if sheet is None:
+        raise ValueError("No active sheet found in the workbook.")
+    header = list(next(sheet.iter_rows(min_row=1, max_row=1, values_only=True)))
+    events = [dict(zip(header, row)) for row in sheet.iter_rows(min_row=2, values_only=True)]
+
+    return sorted(events, key=lambda x: x["date"], reverse=True)
 
 
 def render_template(variables: dict[str, Any]) -> str:
@@ -55,7 +65,7 @@ def render_template(variables: dict[str, Any]) -> str:
 
 
 def main() -> None:
-    vars = {"events": fetch_sheet(UPSTREAM_URL)}
+    vars = {"events": read_sheet()}
     print(render_template(variables=vars))
 
 
