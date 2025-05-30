@@ -30,7 +30,7 @@ Wenn er nicht gerade mit der Almstüberl Musi unterwegs ist, dann arbeitet Ruper
 {{< /card  >}}
 
 {{< card img="rupert-p-portrait.jpg" size="450x450" title="Rupert Pirchner" footer="Steirische Harmonika · Gitarre · Gesang" >}}
-Rupert ist ein leidenschaftlicher Musikant und ist mit diversen Gruppen unterwegs ([Tal-Berg Musi](https://www.talbergmusi.at/), Pongauer Sonntagsmusi). Wenn die Almstüberl Musikanten "auf da leisch" sind, dann ist sind wir immer wieder begeistert, wo man Rupert überall kennt - er ist sozusagen unser Almi-Bunter Hund oder Network-Meister. Musikalisch bringt er immer wieder neuen Stücke mit und sorgt dafür, dass wir uns immer schön weiterentwickeln. Mit seiner rassigen Zugin trägt er wesentlich zum „musikantischen” Klang der Almstüberl Musi bei.
+Rupert ist ein leidenschaftlicher Musikant und ist mit diversen Gruppen unterwegs ([Tal-Berg Musi](https://www.talbergmusi.at/), Pongauer Sonntagsmusi). Wenn die Almstüberl Musikanten „auf da leisch“ sind, dann ist sind wir immer wieder begeistert, wo man Rupert überall kennt - er ist sozusagen unser Almi-Bunter Hund oder Network-Meister. Musikalisch bringt er immer wieder neuen Stücke mit und sorgt dafür, dass wir uns immer schön weiterentwickeln. Mit seiner rassigen Zugin trägt er wesentlich zum „musikantischen” Klang der Almstüberl Musi bei.
 
 Wenn er nicht gerade mit der Almstüberl Musi unterwegs ist, dann kümmert sich Rupert um die Finanzen der Gemeinde Schwarzach im Pongau. Besonders freuen wir Almstüberl Musikanten uns aber, wenn er wieder einmal einen „Bierbrautag” einlegt und wir zum Verkosten vorbeikommen dürfen. 
 {{< /card  >}}
