@@ -1,4 +1,5 @@
-{{ $img := .Page.Resources.GetMatch (.Get "src") }}
+{{ $imgOrig := .Page.Resources.GetMatch (.Get "src") }}
+{{ $img := $imgOrig }}
 {{ $size :=  .Get "size" }}
 {{- if not $size -}}
     {{ $size = "1400x1040 webp" }}
@@ -24,35 +25,13 @@
 
 <!-- https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/figure.html -->
 
-<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
-    {{- if .Get "link" -}}
-        <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
-    {{- end -}}
-    {{- if .Get "overlay" -}}
-        <div class="overlay-container">
-    {{- end -}}
-
-    <a href="{{ $img.Permalink }}"><img class="img-fluid" src="{{ $img.Permalink }}"{{- if or (.Get "alt") (.Get "caption") }} alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify | plainify }}{{ end }}" {{- end -}} {{- with .Get "loading" }} loading="{{ . }}"{{ else }} loading="lazy"{{ end -}}></a>
-
-    {{- if .Get "overlay" -}}
-        <div class="overlay">{{ .Get "overlay" }}</div>
-        </div>
-    {{- end -}}
-
-    {{- if .Get "link" }}</a>{{ end -}}
-
-    {{- if (.Get "caption") -}}
-        <figcaption>
-            {{- if .Get "caption" -}}<p>
-                {{- .Get "caption" | markdownify -}}
-            </p>
-            {{- end }}
-
-            {{ with $img.Exif}}
-                {{ with .Date }}{{ . }}{{ end }}
-                {{ with .Lat }}{{ . }}{{ end }}
-                {{ with .Long }}{{ . }}{{ end }}
-            {{- end }}
-        </figcaption>
-    {{- end }}
-</figure>
+<div class="d-flex justify-content-center">
+    <figure class="figure {{ with .Get "class" }} {{ . }}{{ end }}">
+        <a href="{{ $imgOrig.Permalink }}"><img class="figure-img img-fluid rounded" src="{{ $img.Permalink }}"{{- if or (.Get "alt") (.Get "caption") }} alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify | plainify }}{{ end }}" {{- end -}} {{- with .Get "loading" }} loading="{{ . }}"{{ else }} loading="lazy"{{ end -}}></a>
+        {{- if (.Get "caption") -}}
+            <figcaption class="figure-caption text-center">
+                {{- if .Get "caption" -}}{{- .Get "caption" | markdownify -}}{{- end }}
+            </figcaption>
+        {{- end }}
+    </figure>
+</div>

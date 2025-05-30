@@ -19,22 +19,26 @@ TPL = """---
 title: Veranstaltungen
 ---
 
-<table class="table">
+<table class="table table-striped">
     <thead>
         <th>Datum</th>
-        <th>Ort</th>
         <th>Veranstaltung</th>
+        <th>Ort</th>
     </thead>
     <tbody>
     {% for event in events %}
+        {% if event.upcoming %}
         <tr>
-            <td>{{ event.date.strftime('%d.%m.%Y') }}</td>
-            <td>{{ event.location }}</td>
+        {% else %}
+        <tr class="dimmed-row">
+        {% endif %}
+            <td><time datetime="{{ event.date.strftime('%Y-%m-%d') }}">{{ event.date.strftime('%d.%m.%Y') }}<time></td>
             {% if event.url %}
                 <td><a href="{{ event.url }}">{{ event.details }}</a></td>
             {% else %}
                 <td>{{ event.details }}</td>
             {% endif %}
+            <td>{{ event.location }}</td>
         </tr>
     {% endfor %}
     </tbody>
@@ -49,6 +53,10 @@ def read_sheet() -> list[dict[str, Any]]:
         raise ValueError("No active sheet found in the workbook.")
     header = list(next(sheet.iter_rows(min_row=1, max_row=1, values_only=True)))
     events = [dict(zip(header, row)) for row in sheet.iter_rows(min_row=2, values_only=True)]
+    
+    today = datetime.today()
+    for event in events:
+        event["upcoming"] = event["date"] >= today
 
     return sorted(events, key=lambda x: x["date"], reverse=True)
 
