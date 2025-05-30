@@ -5,7 +5,7 @@
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 960px;
+        max-width: var(--bs-breakpoint-lg);
     }
 }
 
@@ -72,6 +72,6 @@ article.content {
     }
 
     :target {
-        background-color: yellow;
+        background-color: var(--bs-yellow);
     }
 }
