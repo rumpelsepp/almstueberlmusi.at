@@ -19,4 +19,4 @@ Manchmal treffen wir bei unseren Auftritten ganz besondere Menschen. So zum Beis
 
 {{< fig src="CS_08.jpeg" size="800x800">}}
 
-... und noch ein paar Eindrücke -- von uns selbst gemacht 📸
+<!-- ... und noch ein paar Eindrücke -- von uns selbst gemacht 📸 -->
