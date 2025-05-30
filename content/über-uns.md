@@ -4,7 +4,12 @@ Uns geht es vor allem darum, eine feine Zeit mit unserer Almstüberlmusi zu habe
 
 ## Hörproben
 Wir haben es noch nicht geschafft einen eigenen Tonträger aufzunehmen. Aber wir freuen uns sehr, dass wir die Möglichkeit bekommen haben, Archivaufnahmen mit dem Radio Salzburg zu machen. 
-Wenn ihr Lust habt uns zu hören, freuen wir uns, wenn ihr einen Musikwunsch hier abgebt. Aufgenommen haben wir die folgenden Stücke: Lustig uma draht (Peter Züger), I hob a Dianei gliabt (Volksweise) und A blaus Auto (Gottfried Hartl) 
+Wenn ihr Lust habt uns zu hören, freuen wir uns, wenn ihr einen Musikwunsch hier abgebt. 
+
+Aufgenommen haben wir die folgenden Stücke: 
+- Lustig uma draht (Peter Züger) -- *Stammbesetzung*
+- I hob a Dianei gliabt (Volksweise) -- *Stammbesetzung*
+- A blaus Auto (Gottfried Hartl) -- *Saitenmusibesetzung*
 
 https://kontakt.orf.at/oesterreich/salzburg/salzburg-formular116.html
 
