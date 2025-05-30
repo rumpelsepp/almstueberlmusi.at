@@ -8,14 +8,12 @@ Uns geht es vor allem darum, eine feine Zeit mit unserer Almstüberlmusi zu habe
 
 ## Hörproben
 Wir haben es noch nicht geschafft einen eigenen Tonträger aufzunehmen. Aber wir freuen uns sehr, dass wir die Möglichkeit bekommen haben, Archivaufnahmen mit dem Radio Salzburg zu machen. 
-Wenn ihr Lust habt uns zu hören, freuen wir uns, wenn ihr einen Musikwunsch hier abgebt. 
+Wenn ihr Lust habt uns zu hören, freuen wir uns, wenn ihr einen Musikwunsch [hier](https://kontakt.orf.at/oesterreich/salzburg/salzburg-formular116.html) abgebt. 
 
 Aufgenommen haben wir die folgenden Stücke: 
 - Lustig uma draht (Peter Züger) -- *Stammbesetzung*
 - I hob a Dianei gliabt (Volksweise) -- *Stammbesetzung*
 - A blaus Auto (Gottfried Hartl) -- *Saitenmusibesetzung*
-
-https://kontakt.orf.at/oesterreich/salzburg/salzburg-formular116.html
 
 ## Wo wir spielen
 Die Almstüberlmusi eignet sich perfekt, um Feierlichkeiten wie Hochzeiten oder Geburtstagsfeiern musikalisch zu umrahmen. Wir sorgen gerne für gemütliche Unterhaltung oder übernehmen auch gerne auch die musikalische Gestaltung der Trauung. 
