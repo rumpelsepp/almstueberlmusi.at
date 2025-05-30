@@ -30,9 +30,14 @@ title = 'Almstüberl Musi'
     weight = 20
 
     [[menu.main]]
+    name = "Gallerie"
+    pageRef = "/gallerie"
+    weight = 30
+
+    [[menu.main]]
     name = "Über uns"
     pageRef = "/über-uns"
-    weight = 30
+    weight = 40
 
   [markup.goldmark.renderer]
     unsafe = true
