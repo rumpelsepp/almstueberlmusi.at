@@ -29,7 +29,7 @@ Manchmal treffen wir bei unseren Auftritten ganz besondere Menschen. So zum Beis
 ### Rupert Mayrhofer
 Zither, Steirische Harmonika, Gesang
 
-Rupert ist der Herr der vielen Saiten. Wir Almstüberl Musikanten finden es recht schade, dass es heutzutage nicht mehr ganz so viele Zither-Spieler gibt, umso großartiger ist es Rupert unserer Runde zu haben. Als jüngstes Mitglied der Almstüberl Musi sorgt er nicht nur für die besten Geschichten, wenn er mal wegen akutem Hangover zu spät kommt, sondern er prägt den Almstüberl Musi Sound mit seinen flinken Zitherfingern und flotten Melodien. So, zum Beispiel, hat er bereits ein eigenes Stück “Blauer Sonntag” für uns geschrieben. 
+Rupert ist der Herr der vielen Saiten. Wir Almstüberl Musikanten finden es recht schade, dass es heutzutage nicht mehr ganz so viele Zither-Spieler gibt, umso großartiger ist es Rupert in unserer Runde zu haben. Als jüngstes Mitglied der Almstüberl Musi sorgt er nicht nur für die besten Geschichten, wenn er mal wegen akutem Hangover zu spät kommt, sondern er prägt den Almstüberl Musi Sound mit seinen flinken Zitherfingern und flotten Melodien. So, zum Beispiel, hat er bereits ein eigenes Stück “Blauer Sonntag” für uns geschrieben. 
 
 Wenn er nicht gerade mit der Almstüberl Musi unterwegs ist, dann arbeitet Rupert als Maschinenbauer bei Palfinger und liebt es in seiner Freizeit in den Bergen unterwegs zu sein.
 
