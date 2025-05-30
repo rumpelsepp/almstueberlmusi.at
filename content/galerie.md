@@ -7,3 +7,4 @@ Manchmal treffen wir bei unseren Auftritten ganz besondere Menschen. So zum Beis
 
 ... und noch ein paar Eindrücke -- von uns selbst gemacht 📸
 
+{{< fig src="avatar-raw.jpg" class="text-center" size="600x600" >}}
