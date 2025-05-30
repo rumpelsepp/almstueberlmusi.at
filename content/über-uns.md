@@ -36,9 +36,9 @@ Wenn er nicht gerade mit der Almstüberl Musi unterwegs ist, dann kümmert sich 
 ### Stefan Gfrerer
 Bassklarinette, Gesang
 
-Steff ist der “gstudierte” Musikant in unserer Runde und spielt natürlich in mehreren Gruppen mit (Salzburger Saitenbläser, St. Johanner Tanzbodnmusi,...). Obwohl er sonst eher mit der Klarinette zu hören ist, ist er in der Almstüberl Musi ausnahmsweise für die ganz tiefen Töne zuständig. Dabei freut er sich immer wenn er “a richtig cools Gangerl” platzieren kann (wir uns natürlich auch) und haut immer wieder mal ganz spontan eine dritte Stimme raus. 
+Steff ist der “gstudierte” Musikant in unserer Runde und spielt natürlich in mehreren Gruppen mit (Salzburger Saitenbläser, St. Johanner Tanzbodnmusi,...). Obwohl er sonst eher mit der Klarinette zu hören ist, ist er in der Almstüberl Musi ausnahmsweise für die ganz tiefen Töne zuständig. Dabei freut er sich immer wenn er “a richtig cools Gangerl” platzieren kann (wir uns natürlich auch) und haut immer wieder mal ganz spontan eine dritte Stimme raus, das gibt der Almstüberl Musi einen ganz besonderen Touch. Er ist unser Almi-Großer Bruder und schaut immer, dass wir alle wieder gut nach Hause kommen, natürlich erst wenn wir unsere Musi-Einsätze ausgiebig zelebriert haben!
 
-Wenn er nicht gerade mit der Almstüberl Musi unterwegs ist, dann bildet er den musikalischen Nachwuchs auf der Klarinette oder am Saxophon aus. 
+Wenn er nicht gerade mit der Almstüberl Musi unterwegs ist, dann bildet er den musikalischen Nachwuchs auf der Klarinette oder am Saxophon aus oder unterstützt die Salzburger Blasmusikszene tatkräftig. 
 
 ### Karin Oberauer
 Gitarre, Gesang
