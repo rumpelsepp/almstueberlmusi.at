@@ -1,8 +1,12 @@
 /* Overwrite Bootstrap container widths */
 @media (min-width: 1200px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 960px;
-  }
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 960px;
+    }
 }
 
 header.site-header {
@@ -11,46 +15,60 @@ header.site-header {
 
 footer.site-footer {
     margin-top: 1rem;
-    
+
     a {
         color: inherit;
         text-decoration: none;
     }
-    
+
     a:hover {
         text-decoration: underline;
+    }
+    
+    a:after {
+        content: " · ";
+    }
+
+    a:last-child:after {
+        content: "";
     }
 }
 
 article.content {
     text-align: justify;
     hyphens: auto;
-    
+
     header {
         margin-bottom: 2rem;
     }
-    
+
     .figure {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    table tbody tr.dimmed-row {
-          opacity: 0.5;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    h1, h2, h3, h4, h5, h6 {
-        a, a:visited {
+    table tbody tr.dimmed-row {
+        opacity: 0.5;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        a,
+        a:visited {
             color: inherit;
             text-decoration: none;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
     }
 
-        :target {
-            background-color: yellow;
-        }
+    :target {
+        background-color: yellow;
+    }
 }
