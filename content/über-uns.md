@@ -52,10 +52,4 @@ Karin ist eine vielseitige Musikantin, die neben der Volksmusik auch in anderen 
 
 Wenn sie nicht gerade mit der Almstüberl Musi unterwegs ist, dann arbeitet sie an der Uni Innsbruck und forscht im Bereich Bildung für Nachhaltige Entwicklung. Dafür treibt sie sich oft mit Jugendlichen in österreichischen Gletschergebieten herum. 
 
-## Anfragen
-Unser Mann für’s Networking ist definitiv Rupert. Für die anderen ist es immer wieder unfassbar, wie viele Menschen er kennt! Wenn ihr uns gerne für Veranstaltungen buchen möchtet, dann meldet euch einfach bei ihm.
-
-**Kontakt:**
-Mobil: +43 664 8987056
-E-Mail: rpirchner@gmx.at
 

@@ -27,7 +27,8 @@ serve: clean
        --log-driver none \\
        ghcr.io/gohugoio/hugo:latest \
        server \
-       --ignoreCache
+       --ignoreCache \
+       --disableFastRender
 
 clean:
     rm -rf public
