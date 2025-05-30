@@ -30,8 +30,8 @@ title = 'Almstüberl Musi'
     weight = 20
 
     [[menu.main]]
-    name = "Gallerie"
-    pageRef = "/gallerie"
+    name = "Galerie"
+    pageRef = "/galerie"
     weight = 30
 
     [[menu.main]]

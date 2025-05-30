@@ -8,3 +8,5 @@ Unser Mann für’s Networking ist definitiv Rupert. Für die anderen ist es imm
 
 Mobil: <a href="tel:+436648987056">+43 664 8987056</a>  
 E-Mail: rpirchner@gmx.at
+
+{{< fig src="Visitenkarte_hinten.png" size="600x600">}}
