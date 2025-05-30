@@ -20,13 +20,13 @@ title = 'Almstüberl Musi'
 
 [menu]
     [[menu.main]]
-    name = "Veranstaltungen"
-    pageRef = "/veranstaltungen"
+    name = "Booking"
+    pageRef = "/booking"
     weight = 10
 
     [[menu.main]]
-    name = "Booking"
-    pageRef = "/booking"
+    name = "Veranstaltungen"
+    pageRef = "/veranstaltungen"
     weight = 20
 
     [[menu.main]]
