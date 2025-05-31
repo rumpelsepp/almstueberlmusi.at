@@ -35,3 +35,4 @@ title = 'Almstüberl Musi'
 
 [imaging]
   quality = 97
+  resampleFilter = "Lanczos"
