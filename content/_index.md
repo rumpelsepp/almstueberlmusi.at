@@ -14,6 +14,6 @@ Für kräftigere Töne greifen wir zur „Zuginmusi“ – mit zwei Steirischen 
 Etwas feiner und ruhiger wird’s mit unserer „Saitenmusi“: Zither, zwei Gitarren und Bassklarinette sorgen hier für zarte Klänge.
 
 Wer dahintersteckt?
-<a href="{{< relref "über-uns#die-musikantinnen" >}}">Die Musikanten</a>:
-Karin Oberauer (Gitarre), Rupert Pirchner (Steirische Harmonika, Gitarre), Rupert Mairhofer (Zither, Steirische Harmonika), Stefan Gfrerer (Bassklarinette).
+<a href="{{< relref "über-uns#die-musikantinnen" >}}">Die Musikanten</a> (von links nach rechts):
+Stefan Gfrerer (Bassklarinette), Karin Oberauer (Gitarre), Rupert Mairhofer (Zither, Steirische Harmonika), Rupert Pirchner (Steirische Harmonika, Gitarre).
 </div>
