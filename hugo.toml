@@ -30,3 +30,7 @@ theme = "bienensteff"
 
 [markup.goldmark.renderer]
   unsafe = true
+
+[imaging]
+  quality = 97
+  resampleFilter = "Lanczos"
