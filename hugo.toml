@@ -29,7 +29,8 @@ pageRef = "/über-uns"
 weight = 40
 
 [[menus.footer]]
-name = '🔗 Instagram'
+pre = '<i class="bi bi-instagram"></i>'
+name = 'Instagram'
 URL = 'https://www.instagram.com/almstueberl_musi'
 weight = 10
 
@@ -37,6 +38,11 @@ weight = 10
 name = 'Impressum'
 pageRef = '/impressum'
 weight = 20
+
+[[menus.footer]]
+name = 'Datenschutz'
+pageRef = '/datenschutz'
+weight = 30
 
 
 [markup.goldmark.renderer]
