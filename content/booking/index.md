@@ -11,7 +11,7 @@ Inzwischen durften wir schon bei vielen Konzerten, Volksmusikabenden und Adventv
 ## Kontakt
 
 **Unser Mann fürs Netzwerken? Ganz klar: der Rupert.**
-Es ist jedes Mal aufs Neue erstaunlich, wie viele Leute ihn kennen – oder besser gesagt: wie viele Leute *ihn* kennen!
+Es ist jedes Mal aufs Neue erstaunlich, wie viele Leute er kennt – oder besser gesagt: wie viele Leute *ihn* kennen!
 Wenn ihr uns für eine Veranstaltung buchen möchtet, seid ihr bei ihm goldrichtig. Meldet euch einfach – er freut sich (und wir uns auch)! 🎶
 
 Rupert Pirchner  
