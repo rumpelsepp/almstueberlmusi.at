@@ -1,5 +1,5 @@
 baseURL = 'https://almstueberlmusi.at/'
-languageCode = 'de-AT'
+languageCode = 'de-at'
 title = 'Almstüberl Musi'
 theme = "bienensteff"
 
@@ -7,26 +7,37 @@ theme = "bienensteff"
   img = "avatar.jpg"
   icon = "avatar.jpg"
 
-[menu]
-    [[menu.main]]
-    name = "Booking"
-    pageRef = "/booking"
-    weight = 10
+[menus]
+[[menus.main]]
+name = "Booking"
+pageRef = "/booking"
+weight = 10
 
-    [[menu.main]]
-    name = "Veranstaltungen"
-    pageRef = "/veranstaltungen"
-    weight = 20
+[[menus.main]]
+name = "Veranstaltungen"
+pageRef = "/veranstaltungen"
+weight = 20
 
-    [[menu.main]]
-    name = "Galerie"
-    pageRef = "/galerie"
-    weight = 30
+[[menus.main]]
+name = "Galerie"
+pageRef = "/galerie"
+weight = 30
 
-    [[menu.main]]
-    name = "Über uns"
-    pageRef = "/über-uns"
-    weight = 40
+[[menus.main]]
+name = "Über uns"
+pageRef = "/über-uns"
+weight = 40
+
+[[menus.footer]]
+name = '🔗 Instagram'
+URL = 'https://www.instagram.com/almstueberl_musi'
+weight = 10
+
+[[menus.footer]]
+name = 'Impressum'
+pageRef = '/impressum'
+weight = 20
+
 
 [markup.goldmark.renderer]
   unsafe = true
