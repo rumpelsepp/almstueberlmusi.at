@@ -2,7 +2,7 @@
 title: Datenschutzerklärung
 ---
 
-Stand: 29. März 2025
+Stand: 07. Juni 2025
 
 ## Verantwortlicher
 
