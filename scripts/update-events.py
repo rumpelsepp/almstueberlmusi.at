@@ -21,7 +21,7 @@ title: Veranstaltungen
 description: Kommende Veranstaltungen der Almstüberl Musi
 ---
 
-<table class="table table-striped">
+<table id="event-table" class="table table-striped">
     <thead>
         <tr>
             <th>Datum</th>
@@ -31,11 +31,7 @@ description: Kommende Veranstaltungen der Almstüberl Musi
     </thead>
     <tbody>
     {% for event in events %}
-        {% if event.upcoming %}
         <tr>
-        {% else %}
-        <tr class="dimmed line-through">
-        {% endif %}
             <td><time datetime="{{ event.date.strftime('%Y-%m-%d') }}">{{ event.date.strftime('%d.%m.%Y') }}</time></td>
             <td>
             {% if event.url %}
@@ -49,6 +45,25 @@ description: Kommende Veranstaltungen der Almstüberl Musi
     {% endfor %}
     </tbody>
 </table>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); // Only date comparison, ignore time.
+
+        const rows = document.querySelectorAll("table#event-table tbody tr");
+
+        rows.forEach(row => {
+            const timeElement = row.querySelector("time");
+            if (timeElement) {
+                const date = new Date(timeElement.getAttribute("datetime"));
+                if (date < today) {
+                    row.classList.add("dimmed", "line-through");
+                }
+            }
+        });
+    });
+</script>
 """
 
 
