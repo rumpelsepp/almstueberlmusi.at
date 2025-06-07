@@ -1,0 +1,4 @@
+{{ $page := . }}
+{{ with $favicon := resources.Get "favicon.svg" }}
+    {{ partial "menu-bootstrap.html" (dict "menuID" "main" "page" $page "brand" . ) }}
+{{ end }}
