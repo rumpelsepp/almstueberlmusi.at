@@ -21,13 +21,6 @@ Aufgenommen haben wir die folgenden Stücke:
 - I hob a Dianei gliabt (Volksweise) -- *Stubnmusi-Besetzung*
 - A blaus Auto ([Gottfried Hartl](https://www.gottfried-hartl.net/startseite.html)) -- *Saitenmusi-Besetzung*
 
-## Wo wir spielen
-
-Die Almstüberl Musi eignet sich perfekt, um Feierlichkeiten wie Hochzeiten oder Geburtstagsfeiern musikalisch zu umrahmen. Wir sorgen gerne für gemütliche Unterhaltung oder übernehmen gerne die musikalische Gestaltung der Trauung. 
-Gerne sind wir auf kleineren Veranstaltungen unterwegs und können uns bei Bedarf auch ein wenig verstärken. 
-
-Mittlerweile konnten wir schon einiges an Bühnenerfahrung sammeln und wirken gerne bei Konzerten, Volksmusikveranstaltungen, Adventkonzerten oder Ähnlichem mit. Meldet euch gerne einfach bei uns. 🙂
-
 ## Die Musikant:innen
 
 {{< card img="rupert-m-portrait.jpg" size="450x450" title="Rupert Mairhofer" footer="Zither · Steirische Harmonika · Gesang" >}}
