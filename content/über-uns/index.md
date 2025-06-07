@@ -6,7 +6,7 @@ slug: "/ueber-uns"
 
 ## Insa Musi
 
-Unsere Almstüberl Musi ist eine gemütliche Stubnmusi, wie man sie aus dem Salzburger Pongau kennt. Wir spielen echte Volksmusik aus dem gesamten Alpenraum in verschiedenen Besetzungen und am liebsten komplett unplugged. In unserer Stubnmusi-Besetzung (Steirische Harmonika | Zither | Gitarre | Bassklarinette) und in der Zuginmusi-Besetzung (2x steirische Harmonika | Gitarre | Bassklarinette) spielen wir besonders gerne flotte und rassige Stücke. Mit unserer Saitenmusi-Besetzung (Melodiegitarre | Zither | Gitarre | Bassklarinette) schlagen wir auch gerne etwas leisere Töne an, wobei wir es aber trotzdem auch lieber flott anstatt andächtig mögen 😇. Manchmal, wenn wir lustig sind, dann geben wir auch mal singend Lieder zum Besten. 
+Unsere Almstüberl Musi ist eine gemütliche Stubnmusi, wie man sie aus dem Salzburger Pongau kennt. Wir spielen echte Volksmusik aus dem gesamten Alpenraum in verschiedenen Besetzungen und am liebsten komplett unplugged. In unserer Stubnmusi-Besetzung (Steirische Harmonika, Zither, Gitarre und Bassklarinette) und in der Zuginmusi-Besetzung (zweimal steirische Harmonika, Gitarre und Bassklarinette) spielen wir besonders gerne flotte und rassige Stücke. Mit unserer Saitenmusi-Besetzung (Melodiegitarre, Zither, Gitarre und Bassklarinette) schlagen wir auch gerne etwas leisere Töne an, wobei wir es aber trotzdem auch lieber flott anstatt andächtig mögen 😇. Manchmal, wenn wir lustig sind, dann geben wir auch mal singend Lieder zum Besten. 
 Uns geht es vor allem darum, eine feine Zeit mit unserer Almstüberl Musi zu haben und anderen damit eine Freude zu bereiten.
 
 ## Hörproben
@@ -15,6 +15,7 @@ Wir haben es noch nicht geschafft einen eigenen Tonträger aufzunehmen. Aber wir
 Wenn ihr Lust habt uns zu hören, freuen wir uns, wenn ihr [hier](https://kontakt.orf.at/oesterreich/salzburg/salzburg-formular116.html) einen Musikwunsch abgebt. 
 
 Aufgenommen haben wir die folgenden Stücke: 
+
 - Lustig uma draht (Peter Züger) -- *Stubnmusi-Besetzung*
 - I hob a Dianei gliabt (Volksweise) -- *Stubnmusi-Besetzung*
 - A blaus Auto ([Gottfried Hartl](https://www.gottfried-hartl.net/startseite.html)) -- *Saitenmusi-Besetzung*
