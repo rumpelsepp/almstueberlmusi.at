@@ -1,5 +1,6 @@
 ---
 title: "Almstüberl Musi"
+description: "Echte Volksmusik aus dem gesamten Alpenland, vorwiegend aus dem Salzburger Pongau."
 ---
 
 {{< fig src="CS_03_Visitenkarte02-cropped.jpeg" size="900x900" caption="Foto: [Christian Schartner](http://www.christian-schartner.at/)" >}}

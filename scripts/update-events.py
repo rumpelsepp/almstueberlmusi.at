@@ -5,39 +5,45 @@
 # dependencies = [
 #     "jinja2",
 #     "openpyxl",
+#     "pydantic",
 # ]
 # ///
 
-import csv
-from datetime import datetime
-from typing import Any
+from datetime import datetime, date
+from typing import Any, cast
 
 import openpyxl
 import jinja2
+import pydantic
 
 TPL = """---
 title: Veranstaltungen
+description: Kommende Veranstaltungen der Almstüberl Musi
 ---
 
 <table class="table table-striped">
     <thead>
-        <th>Datum</th>
-        <th>Veranstaltung</th>
-        <th>Ort</th>
+        <tr>
+            <th>Datum</th>
+            <th>Veranstaltung</th>
+            <th>Ort</th>
+        </tr>
     </thead>
     <tbody>
     {% for event in events %}
         {% if event.upcoming %}
         <tr>
         {% else %}
-        <tr class="dimmed-row">
+        <tr class="dimmed line-through">
         {% endif %}
-            <td><time datetime="{{ event.date.strftime('%Y-%m-%d') }}">{{ event.date.strftime('%d.%m.%Y') }}<time></td>
+            <td><time datetime="{{ event.date.strftime('%Y-%m-%d') }}">{{ event.date.strftime('%d.%m.%Y') }}</time></td>
+            <td>
             {% if event.url %}
-                <td><a href="{{ event.url }}">{{ event.details }}</a></td>
+                <a href="{{ event.url }}">{{ event.details }}</a>
             {% else %}
-                <td>{{ event.details }}</td>
+                {{ event.details }}
             {% endif %}
+            </td>
             <td>{{ event.location }}</td>
         </tr>
     {% endfor %}
@@ -46,20 +52,39 @@ title: Veranstaltungen
 """
 
 
-def read_sheet() -> list[dict[str, Any]]:
-    workbook = openpyxl.load_workbook('termine.xlsx')
+class Event(pydantic.BaseModel):
+    date_time: datetime = pydantic.Field(alias='date')
+    details: str
+    location: str
+    url: str | None = None
+    next: bool = False
+
+    @property
+    def upcoming(self) -> bool:
+        return self.date >= date.today()
+    
+    @property
+    def date(self) -> date:
+        return self.date_time.date()
+
+
+def read_sheet() -> list[Event]:
+    workbook = openpyxl.load_workbook("termine.xlsx")
     sheet = workbook.active
     if sheet is None:
-        raise ValueError("No active sheet found in the workbook.")
-    header = list(next(sheet.iter_rows(min_row=1, max_row=1, values_only=True)))
-    events = [dict(zip(header, row)) for row in sheet.iter_rows(min_row=2, values_only=True)]
+        raise ValueError("No active sheet in the workbook")
+
+    header = cast(
+        list[str], list(next(sheet.iter_rows(min_row=1, max_row=1, values_only=True)))
+    )
+
+    events: list[Event] = []
+    for row in sheet.iter_rows(min_row=2, max_col=4, values_only=True):
+        event = Event(**dict(zip(header, row)))  # type: ignore
+        events.append(event)
+
+    return sorted(events, key=lambda x: x.date, reverse=True)
     
-    today = datetime.today()
-    for event in events:
-        event["upcoming"] = event["date"] >= today
-
-    return sorted(events, key=lambda x: x["date"], reverse=True)
-
 
 def render_template(variables: dict[str, Any]) -> str:
     return (

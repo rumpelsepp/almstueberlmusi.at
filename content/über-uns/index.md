@@ -1,5 +1,7 @@
 ---
 title: "Über uns"
+aliases: ["/über-uns"]
+slug: "/ueber-uns"
 ---
 
 ## Insa Musi

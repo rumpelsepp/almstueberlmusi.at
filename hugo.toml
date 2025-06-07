@@ -1,13 +1,11 @@
 baseURL = 'https://almstueberlmusi.at/'
-languageCode = 'de-de'
+languageCode = 'de-AT'
 title = 'Almstüberl Musi'
-
+theme = "bienensteff"
 
 [params.main]
   img = "avatar.jpg"
   icon = "avatar.jpg"
-  quote = "Echte Volksmusik aus dem Salzburger Pongau"
-  description= "Gespielt wird echte Volksmusik aus dem gesamten Alpenland, vorwiegend aus dem Salzburger Pongau. Die Besetzung variiert, je nach Anlass und Stimmung. Die Stammbesetzung ist mit Steirischer Harmonika-Zither-Gitarre-Bassklarinette. Gerne wird aber auch mit zwei Steirischen Harmonikas-Gitarre-Bassklarinette oder als \"Saitenmusi\" mit Zither-zwei Gitarren-Bassklarinette aufgespielt. Die Musikanten: Karin Oberauer (Gitarre), Rupert Pirchner (Steirische Harmonika, Gitarre), Rupert Mairhofer (Zither, Steirische Harmonika), Stefan Gfrerer (Bassklarinette)."
 
 [menu]
     [[menu.main]]
@@ -32,7 +30,3 @@ title = 'Almstüberl Musi'
 
 [markup.goldmark.renderer]
   unsafe = true
-
-[imaging]
-  quality = 97
-  resampleFilter = "Lanczos"

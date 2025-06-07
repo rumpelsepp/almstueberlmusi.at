@@ -52,6 +52,7 @@ article.content {
 
     table tbody tr.dimmed-row {
         opacity: 0.5;
+        text-decoration: line-through;
     }
 
     h1,

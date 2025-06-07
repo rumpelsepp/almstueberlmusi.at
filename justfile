@@ -24,7 +24,7 @@ serve: clean
        --workdir "/mnt/$PWD" \
        --userns keep-id \
        --group-add keep-groups \
-       --log-driver none \\
+       --log-driver none \
        ghcr.io/gohugoio/hugo:latest \
        server \
        --ignoreCache \
