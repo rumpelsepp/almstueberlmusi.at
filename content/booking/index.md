@@ -5,8 +5,8 @@ title: Booking
 **Ob Hochzeit, Geburtstag oder einfach ein schöner Anlass** – die Almstüberl Musi sorgt für die passende musikalische Umrahmung.
 Mit echter, handgemachter Volksmusik bringen wir gemütliche Stimmung zu eurer Feier – oder gestalten ganz feierlich eure Trauung.
 
-Wir spielen besonders gerne bei kleineren Veranstaltungen, passen uns dem Rahmen an – und wenn’s mal etwas mehr sein darf, bringen wir auch gerne Verstärkung mit.
-Inzwischen durften wir schon bei vielen Konzerten, Volksmusikabenden und Adventveranstaltungen mitwirken – mit jeder Menge Bühnenerfahrung im Gepäck.
+Wir spielen besonders gerne bei kleineren Veranstaltungen, passen uns dem Rahmen an – und wenn’s mal etwas mehr sein darf, bringen wir auch gerne Verstärkung mit. 🎻🎶
+Inzwischen durften wir schon bei vielen Konzerten, Volksmusikabenden und Adventveranstaltungen mitwirken – mit jeder Menge Bühnenerfahrung im Gepäck. 🎻🎶
 
 ## Kontakt
 
