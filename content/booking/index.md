@@ -2,10 +2,11 @@
 title: Booking
 ---
 
-Die Almstüberl Musi eignet sich perfekt, um Feierlichkeiten wie Hochzeiten oder Geburtstagsfeiern musikalisch zu umrahmen. Wir sorgen gerne für gemütliche Unterhaltung oder übernehmen gerne die musikalische Gestaltung der Trauung. 
-Gerne sind wir auf kleineren Veranstaltungen unterwegs und können uns bei Bedarf auch ein wenig verstärken. 
+**Ob Hochzeit, Geburtstag oder einfach ein schöner Anlass** – die Almstüberl Musi sorgt für die passende musikalische Umrahmung.
+Mit echter, handgemachter Volksmusik bringen wir gemütliche Stimmung zu eurer Feier – oder gestalten ganz feierlich eure Trauung.
 
-Mittlerweile konnten wir schon einiges an Bühnenerfahrung sammeln und wirken gerne bei Konzerten, Volksmusikveranstaltungen, Adventkonzerten oder Ähnlichem mit. Meldet euch gerne einfach bei uns. 🙂
+Wir spielen besonders gerne bei kleineren Veranstaltungen, passen uns dem Rahmen an – und wenn’s mal etwas mehr sein darf, bringen wir auch gerne Verstärkung mit.
+Inzwischen durften wir schon bei vielen Konzerten, Volksmusikabenden und Adventveranstaltungen mitwirken – mit jeder Menge Bühnenerfahrung im Gepäck.
 
 ## Kontakt
 
@@ -13,7 +14,8 @@ Mittlerweile konnten wir schon einiges an Bühnenerfahrung sammeln und wirken ge
 Es ist jedes Mal aufs Neue erstaunlich, wie viele Leute ihn kennen – oder besser gesagt: wie viele Leute *ihn* kennen!
 Wenn ihr uns für eine Veranstaltung buchen möchtet, seid ihr bei ihm goldrichtig. Meldet euch einfach – er freut sich (und wir uns auch)! 🎶
 
+Rupert Pirchner  
 Mobil: <a href="tel:+436648987056">+43 664 8987056</a>  
 E-Mail: rpirchner@gmx.at
 
-{{< fig src="Visitenkarte_hinten.png" size="800x800">}}
+{{< fig src="Visitenkarte_hinten.png" size="1000x1000">}}
