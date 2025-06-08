@@ -35,7 +35,8 @@ description: Kommende Veranstaltungen der Almstüberl Musi
             <td><time datetime="{{ event.date.strftime('%Y-%m-%d') }}">{{ event.date.strftime('%d.%m.%Y') }}</time></td>
             <td>
             {% if event.url %}
-                <a href="{{ event.url }}">{{ event.details }}</a>
+                <i class="bi bi-box-arrow-up-right"></i>
+                <a href="{{ event.url }}" target="_blank" rel="noopener noreferrer">{{ event.details }}</a>
             {% else %}
                 {{ event.details }}
             {% endif %}
@@ -74,10 +75,6 @@ class Event(pydantic.BaseModel):
     url: str | None = None
     next: bool = False
 
-    @property
-    def upcoming(self) -> bool:
-        return self.date >= date.today()
-    
     @property
     def date(self) -> date:
         return self.date_time.date()
