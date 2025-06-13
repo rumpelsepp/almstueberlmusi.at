@@ -1,4 +1,5 @@
-deploy: clean
+build: clean
+    npm run build
     podman run \
         --net=none \
         --rm \
@@ -11,7 +12,9 @@ deploy: clean
         --log-driver none \
         ghcr.io/gohugoio/hugo:latest \
         build \
-        --ignoreCache && \
+        --ignoreCache
+
+deploy: build
     rsync -avz --delete public/ deploy@almstueberlmusi.at:/srv/http/deploy/almstueberlmusi.at
 
 serve: clean
