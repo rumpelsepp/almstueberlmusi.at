@@ -41,6 +41,14 @@ description: Kommende Veranstaltungen der Almstüberl Musi
             <td>5542 Flachau</td>
         </tr>
             <tr>
+            <td><time datetime="2025-09-09">09.09.2025</time></td>
+            <td>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://www.hotel-tirolerhof.com/" target="_blank" rel="noopener noreferrer">Stammgäste-Galaabend im Tirolerhof</a>
+                        </td>
+            <td>5542 Flachau</td>
+        </tr>
+            <tr>
             <td><time datetime="2025-07-06">06.07.2025</time></td>
             <td>
                             <i class="bi bi-box-arrow-up-right"></i>
