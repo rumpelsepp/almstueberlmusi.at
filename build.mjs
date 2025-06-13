@@ -10,7 +10,7 @@ await build({
   },
   outdir: 'assets',
   bundle: true,
-  sourcemap: true,
+  sourcemap: false,
   minify: false,
   target: 'es2024',
   format: 'esm',
