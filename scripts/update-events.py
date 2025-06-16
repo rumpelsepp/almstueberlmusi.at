@@ -59,7 +59,7 @@ description: Kommende Veranstaltungen der Almstüberl Musi
             if (timeElement) {
                 const date = new Date(timeElement.getAttribute("datetime"));
                 if (date < today) {
-                    row.classList.add("text-muted", "text-decoration-line-through");
+                    row.classList.add("dimmed", "text-decoration-line-through");
                 }
             }
         });
