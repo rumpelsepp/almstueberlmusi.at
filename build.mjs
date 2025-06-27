@@ -9,9 +9,9 @@ async function runBuild() {
     const ctx = await esbuild.context({
       entryPoints: {
         base_bundle: path.resolve('themes/bienensteff/bundle_src/js/main.ts'),
-        // bundle: path.resolve('bundle_src/js/main.ts'),
+        bundle: path.resolve('bundle_src/js/main.ts'),
         base_style: path.resolve('themes/bienensteff/bundle_src/css/main.css'),
-        // style: path.resolve('bundle_src/css/style.css'),
+        style: path.resolve('bundle_src/css/style.css'),
       },
       outdir: 'static',
       bundle: true,

@@ -1,0 +1,5 @@
+#site-header {
+    .navbar .navbar-nav .nav-item .nav-link {
+        --bs-nav-link-font-size: 1.2rem;
+    }
+}
