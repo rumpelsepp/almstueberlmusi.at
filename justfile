@@ -1,5 +1,7 @@
-build: clean
+npm-build:
     npm run build
+
+build: clean npm-build
     podman run \
         --net=none \
         --rm \
@@ -17,7 +19,7 @@ build: clean
 deploy: build
     rsync -avz --delete public/ deploy@almstueberlmusi.at:/srv/http/deploy/almstueberlmusi.at
 
-serve: clean
+serve: clean npm-build
     podman run \
        --net=host \
        --rm \
