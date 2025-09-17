@@ -41,6 +41,14 @@ description: Kommende Veranstaltungen der Almstüberl Musi
             <td>5542 Flachau</td>
         </tr>
             <tr>
+            <td><time datetime="2025-09-17">17.09.2025</time></td>
+            <td>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://www.radstadt.com/radstadt/veranstaltungskalender/veranstaltungen/SPO/5daeaf0a-c467-4911-8642-9265a620dec0/roem--kath--erntedankfest-mit-prozession" target="_blank" rel="noopener noreferrer">Erntedankfest</a>
+                        </td>
+            <td>5550 Radstadt</td>
+        </tr>
+            <tr>
             <td><time datetime="2025-09-09">09.09.2025</time></td>
             <td>
                             <i class="bi bi-box-arrow-up-right"></i>
