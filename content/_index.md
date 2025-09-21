@@ -18,3 +18,4 @@ Etwas feiner und ruhiger wird’s mit unserer „Saitenmusi“: Zither, zwei Git
 Wer dahintersteckt?
 <a href="{{< relref "über-uns#die-musikantinnen" >}}">Die Musikanten</a> (von links nach rechts):
 Stefan Gfrerer (Bassklarinette), Karin Oberauer (Gitarre), Rupert Mairhofer (Zither, Steirische Harmonika), Rupert Pirchner (Steirische Harmonika, Gitarre).
+{.lead}
