@@ -22,7 +22,8 @@ description: Kommende Veranstaltungen der Almstüberl Musi
             <tr>
             <td><time datetime="2025-12-07">07.12.2025</time></td>
             <td>
-                            Adventkonzert
+                            <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://www.radstadt.at/Alpenlaendisches_Adventsingen" target="_blank" rel="noopener noreferrer">Adventkonzert</a>
                         </td>
             <td>5550 Radstadt</td>
         </tr>
