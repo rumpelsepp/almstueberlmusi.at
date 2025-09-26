@@ -13,6 +13,13 @@ description: Kommende Veranstaltungen der Almstüberl Musi
     </thead>
     <tbody>
             <tr>
+            <td><time datetime="2025-12-13">13.12.2025</time></td>
+            <td>
+                            Adventkonzert
+                        </td>
+            <td>5450 Werfen</td>
+        </tr>
+            <tr>
             <td><time datetime="2025-12-07">07.12.2025</time></td>
             <td>
                             Adventkonzert
