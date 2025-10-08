@@ -13,6 +13,14 @@ description: Kommende Veranstaltungen der Almstüberl Musi
     </thead>
     <tbody>
             <tr>
+            <td><time datetime="2025-12-14">14.12.2025</time></td>
+            <td>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://www.altenmarkt-zauchensee.at/de/winter-urlaub/advent-markt.html" target="_blank" rel="noopener noreferrer">Adventkonzert</a>
+                        </td>
+            <td>5541 Altenmarkt-Zauchensee</td>
+        </tr>
+            <tr>
             <td><time datetime="2025-12-13">13.12.2025</time></td>
             <td>
                             Adventkonzert
