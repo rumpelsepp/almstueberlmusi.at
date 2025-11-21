@@ -13,12 +13,28 @@ description: Kommende Veranstaltungen der Almstüberl Musi
     </thead>
     <tbody>
             <tr>
+            <td><time datetime="2025-12-26">26.12.2025</time></td>
+            <td>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://www.radstadt.com/radstadt/top-events/weihnachts-wanderungen/" target="_blank" rel="noopener noreferrer">Weihnachtswanderung</a>
+                        </td>
+            <td>5550 Radstadt</td>
+        </tr>
+            <tr>
             <td><time datetime="2025-12-14">14.12.2025</time></td>
             <td>
                             <i class="bi bi-box-arrow-up-right"></i>
-                <a href="https://www.altenmarkt-zauchensee.at/de/winter-urlaub/advent-markt.html" target="_blank" rel="noopener noreferrer">Adventkonzert</a>
+                <a href="https://www.altenmarkt-zauchensee.at/de/winter-urlaub/advent-markt.html" target="_blank" rel="noopener noreferrer">Adventmarkt</a>
                         </td>
             <td>5541 Altenmarkt-Zauchensee</td>
+        </tr>
+            <tr>
+            <td><time datetime="2025-12-14">14.12.2025</time></td>
+            <td>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://www.zellamsee-kaprun.com/de/event/zeller-adventkonzert-des-kiwanis-club-zell-am-see~12225" target="_blank" rel="noopener noreferrer">Zeller Adventkonzert des KIWANIS Club Zell am See</a>
+                        </td>
+            <td>5700 Zell am See</td>
         </tr>
             <tr>
             <td><time datetime="2025-12-13">13.12.2025</time></td>
@@ -26,6 +42,14 @@ description: Kommende Veranstaltungen der Almstüberl Musi
                             Adventkonzert
                         </td>
             <td>5450 Werfen</td>
+        </tr>
+            <tr>
+            <td><time datetime="2025-12-07">07.12.2025</time></td>
+            <td>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://www.altenmarkt-zauchensee.at/de/winter-urlaub/advent-markt.html" target="_blank" rel="noopener noreferrer">Adventmarkt</a>
+                        </td>
+            <td>5541 Altenmarkt-Zauchensee</td>
         </tr>
             <tr>
             <td><time datetime="2025-12-07">07.12.2025</time></td>
