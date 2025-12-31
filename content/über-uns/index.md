@@ -12,6 +12,8 @@ Uns geht es vor allem darum, eine feine Zeit mit unserer Almstüberl Musi zu hab
 
 ## Hörproben
 
+{{< audio src="livemitschnitt.mp3" caption="Livemitschnitt 2025" >}}
+
 Wir haben es noch nicht geschafft einen eigenen Tonträger aufzunehmen. Aber wir freuen uns sehr, dass wir die Möglichkeit bekommen haben, Archivaufnahmen mit dem Radio Salzburg zu machen. 
 Wenn ihr Lust habt uns zu hören, freuen wir uns, wenn ihr [hier](https://kontakt.orf.at/oesterreich/salzburg/salzburg-formular116.html) einen Musikwunsch abgebt. 
 

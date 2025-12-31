@@ -1,0 +1,8 @@
+{{ with .Page.Resources.GetMatch (.Get "src") }}
+    <figure>
+        <audio controls preload="auto" src="{{ .RelPermalink }}"></audio>
+        {{ with $.Get "caption" }}
+            <figcaption>{{ . }}</figcaption>
+        {{ end }}
+    </figure>
+{{ end }}
