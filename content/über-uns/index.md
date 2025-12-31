@@ -4,11 +4,11 @@ aliases: ["/über-uns"]
 slug: "/ueber-uns"
 ---
 
-## Insa Musi
-
 Unsere Almstüberl Musi ist eine gemütliche Stubnmusi, wie man sie aus dem Salzburger Pongau kennt. Wir spielen echte Volksmusik aus dem gesamten Alpenraum in verschiedenen Besetzungen und am liebsten komplett unplugged. In unserer Stubnmusi-Besetzung (Steirische Harmonika, Zither, Gitarre und Bassklarinette) und in der Zuginmusi-Besetzung (zweimal steirische Harmonika, Gitarre und Bassklarinette) spielen wir besonders gerne flotte und rassige Stücke. Mit unserer Saitenmusi-Besetzung (Melodiegitarre, Zither, Gitarre und Bassklarinette) schlagen wir auch gerne etwas leisere Töne an, wobei wir es aber trotzdem auch lieber flott anstatt andächtig mögen 😇. Manchmal, wenn wir lustig sind, dann geben wir auch mal singend Lieder zum Besten. 
+{.lead}
 
 Uns geht es vor allem darum, eine feine Zeit mit unserer Almstüberl Musi zu haben und anderen damit eine Freude zu bereiten.
+{.lead}
 
 ## Hörproben
 
