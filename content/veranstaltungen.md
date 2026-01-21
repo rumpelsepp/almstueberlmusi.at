@@ -13,6 +13,14 @@ description: Kommende Veranstaltungen der Almstüberl Musi
     </thead>
     <tbody>
             <tr>
+            <td><time datetime="2026-07-04">04.07.2026</time></td>
+            <td>
+                            <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://www.stadt-salzburg.at/kultur/volkskultur/salzburger-strassenmusik/" target="_blank" rel="noopener noreferrer">Salzburger Straßenmusik</a>
+                        </td>
+            <td>5020 Salzburg</td>
+        </tr>
+            <tr>
             <td><time datetime="2025-12-26">26.12.2025</time></td>
             <td>
                             <i class="bi bi-box-arrow-up-right"></i>
