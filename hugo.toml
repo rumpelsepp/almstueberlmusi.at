@@ -1,5 +1,7 @@
 baseURL = 'https://almstueberlmusi.at/'
 languageCode = 'de-at'
+defaultContentLanguage = "de"
+
 title = 'Almstüberl Musi'
 theme = "bienensteff"
 
@@ -70,3 +72,6 @@ weight = 30
 [imaging]
   quality = 97
   resampleFilter = "Lanczos"
+
+[security]
+  enableInlineShortcodes = true

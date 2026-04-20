@@ -11,7 +11,5 @@ Gräfelfinger Straße 169a
 81375 München  
 Deutschland, Bayern
 
-**E-Mail-Adresse**: stefan.tatschner@mailbox.org  
+**E-Mail**: stefan.tatschner@mailbox.org  
 **Impressum**: https://almstueberlmusi.at/impressum/
-
-

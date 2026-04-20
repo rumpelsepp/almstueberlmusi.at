@@ -1,7 +1,7 @@
-#!/usr/bin/env -S uv run -qs
+#!/usr/bin/env -S uv run -s
 
 # /// script
-# requires-python = "== 3.13.*"
+# requires-python = ">= 3.14"
 # dependencies = [
 #     "jinja2",
 #     "openpyxl",
@@ -9,11 +9,11 @@
 # ]
 # ///
 
+import json
 from datetime import datetime, date
 from typing import Any, cast
 
 import openpyxl
-import jinja2
 import pydantic
 
 TPL = """---
@@ -78,9 +78,13 @@ class Event(pydantic.BaseModel):
     @property
     def date(self) -> date:
         return self.date_time.date()
+    
+
+class EventList(pydantic.BaseModel):
+    events: list[Event]
 
 
-def read_sheet() -> list[Event]:
+def read_sheet() -> EventList:
     workbook = openpyxl.load_workbook("termine.xlsx")
     sheet = workbook.active
     if sheet is None:
@@ -95,7 +99,7 @@ def read_sheet() -> list[Event]:
         event = Event(**dict(zip(header, row)))  # type: ignore
         events.append(event)
 
-    return sorted(events, key=lambda x: x.date, reverse=True)
+    return EventList(events=sorted(events, key=lambda x: x.date, reverse=True))
     
 
 def render_template(variables: dict[str, Any]) -> str:
@@ -110,8 +114,7 @@ def render_template(variables: dict[str, Any]) -> str:
 
 
 def main() -> None:
-    vars = {"events": read_sheet()}
-    print(render_template(variables=vars))
+    print(read_sheet().model_dump_json())
 
 
 if __name__ == "__main__":
