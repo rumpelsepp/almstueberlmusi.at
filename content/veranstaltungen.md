@@ -49,9 +49,16 @@ description: Kommende Veranstaltungen der Almstüberl Musi
                 const event_date = new Date(timeElement.getAttribute("datetime"));
                 if (event_date < oneYearAgo) {
                     row.remove();
+                    return;
                 }
                 if (event_date < today) {
                     row.classList.add("dimmed", "text-decoration-line-through");
+        
+                    // Remove date.
+                    const firstCell = row.querySelector("td:first-child");
+                    if (firstCell) {
+                        firstCell.textContent = "";
+                    }
                 }
             }
         });

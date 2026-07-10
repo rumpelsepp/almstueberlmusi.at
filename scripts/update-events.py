@@ -9,7 +9,7 @@
 # ///
 
 from datetime import datetime, date
-from typing import Any, cast
+from typing import cast
 
 import openpyxl
 import pydantic
@@ -54,7 +54,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    try:
-        main()
-    except KeyboardInterrupt:
-        pass
+    main()

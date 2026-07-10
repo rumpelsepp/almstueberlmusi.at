@@ -1,6 +1,5 @@
 baseURL = 'https://almstueberlmusi.at/'
-languageCode = 'de-at'
-defaultContentLanguage = "de"
+locale = 'de-at'
 
 title = 'Almstüberl Musi'
 theme = "bienensteff"
