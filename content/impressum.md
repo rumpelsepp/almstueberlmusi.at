@@ -14,5 +14,5 @@ E-Mail: rpirchner@gmx.at
 ## Verantwortlich für den Inhalt
 
 Karin Oberauer  
-Rupergasse 2  
+Rupertgasse 2  
 5550 Radstadt
