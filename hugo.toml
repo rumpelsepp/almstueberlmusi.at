@@ -1,5 +1,5 @@
 baseURL = 'https://almstueberlmusi.at/'
-locale = 'de-at'
+locale = 'de-AT'
 
 title = 'Almstüberl Musi'
 theme = "bienensteff"
