@@ -1,37 +1,51 @@
-{{ $img := .Page.Resources.GetMatch (.Get "img") }}
-{{ $size :=  .Get "size" }}
-{{- if not $size -}}
-    {{ $size = "1400x1040 webp" }}
-{{- end }}
+{{- /*
+  Musician card: portrait from the page bundle next to name, instruments and
+  a short text. Overrides the theme's card shortcode; styled by .member-card
+  in bundle_src/css/style.css.
 
-{{ $hasExif := false }}
+  Params:
+    img     page bundle image (required)
+    title   name
+    footer  instruments/roles, separated by "·"; shown as a row of chips
 
-{{ with $img.Exif }}
-    {{ $hasExif = true }}
-
-    {{ $orientation := .Tags.Orientation }}
-    {{ $img = $img.Fit $size }}
-
-    {{ if (eq $orientation 6) }}
-        {{ $img = $img.Resize (printf "%dx%d r270" $img.Height $img.Width) }}
-    {{ else if (eq $orientation 8) }}
-        {{ $img = $img.Resize (printf "%dx%d r90" $img.Height $img.Width) }}
-    {{ end }}
-{{ else }}
-    {{ $img = $img.Fit $size }}
+  On wide screens the portrait sits beside the text and alternates sides
+  from card to card; it always fills its side edge to edge (object-fit:
+  cover, anchored at the top), whatever the height of the text. On small
+  screens it is a square on top of the text. The image should be a tall
+  cut-out, about 300px wide: see .member-card-media in style.css.
+*/ -}}
+{{ $src := .Get "img" }}
+{{ $title := .Get "title" }}
+{{ $img := .Page.Resources.GetMatch $src }}
+{{ if not $img }}
+  {{ warnf "shortcode card: no image resource matching %q in %s" $src .Page.Path }}
 {{ end }}
 
-<div class="card mb-3">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="{{ $img.Permalink }}" class="img-fluid" alt="...">
+{{/* Every second card on a page is mirrored (portrait on the right). */}}
+{{ $n := .Page.Store.Get "memberCards" | default 0 }}
+{{ .Page.Store.Set "memberCards" (add $n 1) }}
+
+<section class="card member-card{{ if eq (mod $n 2) 1 }} member-card--flip{{ end }}">
+  {{ with $img }}
+    <div class="member-card-media">
+      {{ partial "image/img.html" (dict
+        "image" .
+        "alt" $title
+        "sizes" "(max-width: 767.98px) 100vw, 300px"
+      ) }}
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h3 class="card-title h4">{{ .Get "title" }}</h3>
-        <p class="card-text"><small class="text-body-secondary">{{ .Get "footer" }}</small></p>
-        <p class="card-text">{{ .Inner | markdownify }}</p>
-      </div>
+  {{ end }}
+  <div class="member-card-body">
+    <h3 class="member-card-name">{{ $title }}</h3>
+    {{ with .Get "footer" }}
+      <ul class="member-card-roles">
+        {{- range split . "·" }}
+          {{- with strings.TrimSpace . }}<li>{{ . }}</li>{{ end }}
+        {{- end }}
+      </ul>
+    {{ end }}
+    <div class="member-card-text">
+      {{ .Inner | .Page.RenderString (dict "display" "block") }}
     </div>
   </div>
-</div>
+</section>

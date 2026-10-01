@@ -3,3 +3,125 @@
         --bs-nav-link-font-size: 1.2rem;
     }
 }
+
+/* Footer: give the stacked blocks (brand / menu / copyright) some air.
+   The theme only spaces them when the .footer-grid columns are present,
+   which this site's footer doesn't use. */
+#site-footer .footer-col {
+    margin-bottom: 2rem;
+}
+
+/* --------------------------------------------------------------------
+   Musician cards (layouts/_shortcodes/card.html)
+   -------------------------------------------------------------------- */
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.75rem;
+}
+
+/* The portraits are tall 300px wide cut-outs (head down to the instrument)
+   at the full resolution of the original photo -- there are no more pixels
+   to be had. So the layout must never show them wider than that, and they
+   are anchored at the top: a taller card reveals more of the picture
+   instead of zooming in on it. */
+.member-card-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 0;
+}
+
+.member-card-body {
+    padding: 1.5rem 1.25rem;
+}
+
+article.content .member-card-name {
+    margin: 0 0 0.75rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+/* Short accent rule under the name. */
+.member-card-name::after {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 3px;
+    margin-top: 0.6rem;
+    border-radius: 3px;
+    background: var(--color-accent);
+}
+
+.member-card-roles {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0 0 1.1rem;
+    padding: 0;
+    text-align: left;
+    hyphens: none;
+}
+
+.member-card-roles li {
+    padding: 0.15rem 0.7rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
+    color: var(--color-accent);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+}
+
+/* Justified text tears ugly holes into a narrow column. */
+.member-card-text {
+    text-align: left;
+}
+
+.member-card-text > :last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+    .member-card-media img {
+        aspect-ratio: 1 / 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .member-card {
+        flex-direction: row;
+    }
+
+    .member-card--flip {
+        flex-direction: row-reverse;
+    }
+
+    .member-card {
+        min-height: 21rem;
+    }
+
+    .member-card-media {
+        flex: 0 0 min(300px, 38%);
+        position: relative;
+    }
+
+    /* Out of flow, so the text alone decides how tall the card is and the
+       image fills whatever height that gives, edge to edge. */
+    .member-card-media img {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+    }
+
+    .member-card-body {
+        flex: 1 1 0;
+        /* Centre the text when the portrait is the taller side. */
+        align-self: center;
+        padding: 2rem 2.25rem;
+    }
+}

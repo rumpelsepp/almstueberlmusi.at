@@ -4,9 +4,8 @@ locale = 'de-at'
 title = 'Almstüberl Musi'
 theme = "bienensteff"
 
-[params.main]
-  img = "avatar.jpg"
-  icon = "avatar.jpg"
+[params]
+description = 'Echte Volksmusik aus dem gesamten Alpenland'
 
 [menus]
 [[menus.main]]
@@ -69,8 +68,18 @@ weight = 30
         rightSingleQuote = '‘' 
 
 [imaging]
-  quality = 97
   resampleFilter = "Lanczos"
+
+  # Wie beehen.de/bienensteff.de: verlustbehaftete Qualitaet fuer verkleinerte
+  # Bilder (WebP ueber die fig-/image-Partials). Um 80 ist optisch nicht von
+  # hoeheren Werten zu unterscheiden, die Dateien sind aber deutlich kleiner.
+  # Pro Format gesetzt, das globale imaging.quality ist seit Hugo 0.163
+  # deprecated.
+  [imaging.webp]
+    quality = 80
+
+  [imaging.jpeg]
+    quality = 80
 
 [security]
   enableInlineShortcodes = true

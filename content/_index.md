@@ -5,7 +5,7 @@ params:
     images: [CS_03_Visitenkarte02-cropped.jpeg]
 ---
 
-{{< fig src="CS_03_Visitenkarte02-cropped.jpeg" size="900x900" caption="Foto: [Christian Schartner](http://www.christian-schartner.at/)" >}}
+{{< fig src="CS_03_Visitenkarte02-cropped.jpeg" width="900" caption="Foto: [Christian Schartner](http://www.christian-schartner.at/)" >}}
 
 Bei uns gibt’s echte Volksmusik auf die Ohren – handgemacht, normalerweise unverstärkt und mit viel Herzblut.
 Unser Repertoire stammt aus dem gesamten Alpenraum, wobei unser Herz besonders für die Klänge aus dem Salzburger Pongau schlägt.

@@ -1,39 +1,17 @@
+hugo := "./scripts/hugo"
+
 npm-build:
     npm run build
 
+# --gc drops image variants nothing references any more from resources/_gen
 build: clean npm-build
-    podman run \
-        --net=none \
-        --rm \
-        --interactive \
-        --tty \
-        --volume "$PWD:/mnt/$PWD:z" \
-        --workdir "/mnt/$PWD" \
-        --userns keep-id \
-        --group-add keep-groups \
-        --log-driver none \
-        ghcr.io/gohugoio/hugo:latest \
-        build \
-        --ignoreCache
+    {{ hugo }} build --gc
+
+serve: npm-build
+    {{ hugo }} server --buildDrafts --disableFastRender
 
 deploy: build
     rsync -avz --delete public/ deploy@almstueberlmusi.at:/srv/http/deploy/almstueberlmusi.at
-
-serve: clean npm-build
-    podman run \
-       --net=host \
-       --rm \
-       --interactive \
-       --tty \
-       --volume "$PWD:/mnt/$PWD:z" \
-       --workdir "/mnt/$PWD" \
-       --userns keep-id \
-       --group-add keep-groups \
-       --log-driver none \
-       ghcr.io/gohugoio/hugo:latest \
-       server \
-       --ignoreCache \
-       --disableFastRender
 
 clean:
     rm -rf public

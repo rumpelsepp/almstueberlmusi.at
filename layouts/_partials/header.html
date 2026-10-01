@@ -1,4 +1,5 @@
-{{ $page := . }}
-{{ with $favicon := resources.Get "favicon.svg" }}
-    {{ partial "menu-bootstrap.html" (dict "menuID" "main" "page" $page "brand" . ) }}
-{{ end }}
+{{- $logo := resources.Get "favicon.svg" }}
+
+<div class="site-nav-bar">
+  {{ partial "menu-bootstrap.html" (dict "menuID" "main" "page" . "brand" $logo "brandText" site.Title) }}
+</div>

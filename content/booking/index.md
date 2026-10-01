@@ -18,4 +18,4 @@ Rupert Pirchner
 Mobil: <a href="tel:+436648987056">+43 664 8987056</a>  
 E-Mail: rpirchner@gmx.at
 
-{{< fig src="Visitenkarte_hinten.png" size="1000x1000">}}
+{{< fig src="Visitenkarte_hinten.png" width="1000">}}

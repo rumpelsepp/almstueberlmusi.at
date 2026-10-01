@@ -9,5 +9,9 @@
 ## Develop locally
 
 ```
-$ hugo server
+$ npm ci
+$ just serve
 ```
+
+`just` uses the locally installed `hugo`; set `USE_PODMAN=1` to run it from
+the official container image instead (see `scripts/hugo`).
