@@ -1,0 +1,63 @@
+{{- /*
+  Contact card: portrait next to name, a short text and buttons to call
+  and to write. Looks like the musician cards (layouts/_shortcodes/card.html,
+  .member-card in style.css) and takes its portrait from them.
+
+  Params:
+    name   name of the contact person (required)
+    role   what the person is the contact for, shown as a chip (optional)
+    phone  phone number as it is to be shown; dialled without the spaces
+    email  e-mail address
+    img    portrait: an image of this page's bundle or, as "page/image",
+           of another page's (optional)
+    card   business card to download, a file of this page's bundle
+           (optional)
+
+  The body is the text, markdown.
+*/ -}}
+{{- $name := .Get "name" -}}
+{{- $img := "" -}}
+{{- with .Get "img" }}
+  {{- $img = $.Page.Resources.GetMatch . }}
+  {{- if not $img }}
+    {{- with site.GetPage (path.Dir .) }}{{ $img = .Resources.GetMatch (path.Base $.Params.img) }}{{ end }}
+  {{- end }}
+  {{- if not $img }}
+    {{- warnf "shortcode contact: no image resource matching %q in %s" . $.Page.Path }}
+  {{- end }}
+{{- end -}}
+<section class="card member-card contact-card">
+  {{- with $img }}
+  <div class="member-card-media">
+    {{ partial "image/img.html" (dict
+      "image" .
+      "alt" $name
+      "sizes" "(max-width: 767.98px) 100vw, 300px"
+    ) }}
+  </div>
+  {{- end }}
+  <div class="member-card-body">
+    <h3 class="member-card-name">{{ $name }}</h3>
+    {{- with .Get "role" }}
+    <ul class="member-card-roles" role="list"><li>{{ . }}</li></ul>
+    {{- end }}
+    <div class="member-card-text">
+      {{ .Inner | .Page.RenderString (dict "display" "block") }}
+    </div>
+    <p class="contact-actions">
+      {{- with .Get "phone" }}
+      <a class="btn btn-contact" href="tel:{{ replace . " " "" }}"><i class="bi bi-telephone-fill" aria-hidden="true"></i> {{ . }}</a>
+      {{- end }}
+      {{- with .Get "email" }}
+      <a class="btn btn-contact btn-contact--outline" href="mailto:{{ . }}"><i class="bi bi-envelope-fill" aria-hidden="true"></i> {{ . }}</a>
+      {{- end }}
+      {{- with .Get "card" }}
+        {{- with $.Page.Resources.GetMatch . }}
+      <a class="contact-download" href="{{ .RelPermalink }}" download="{{ printf "Visitenkarte %s%s" site.Title (path.Ext .Name) }}"><i class="bi bi-download" aria-hidden="true"></i> Visitenkarte herunterladen ({{ path.Ext .Name | strings.TrimPrefix "." | upper }})</a>
+        {{- else }}
+          {{- warnf "shortcode contact: no resource matching %q in %s" . $.Page.Path }}
+        {{- end }}
+      {{- end }}
+    </p>
+  </div>
+</section>

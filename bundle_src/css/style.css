@@ -525,3 +525,58 @@ article.content .track-list {
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
 }
+
+/* --------------------------------------------------------------------
+   Contact card (layouts/_shortcodes/contact.html): a musician card with
+   buttons to call and to write
+   -------------------------------------------------------------------- */
+
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 1.25rem 0 0;
+    text-align: left;
+    hyphens: none;
+}
+
+.btn-contact {
+    --bs-btn-padding-x: 1.1rem;
+    --bs-btn-padding-y: 0.55rem;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--color-accent);
+    --bs-btn-border-color: var(--color-accent);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: color-mix(in srgb, var(--color-accent) 85%, #000);
+    --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-btn-hover-bg);
+    --bs-btn-active-border-color: var(--bs-btn-hover-bg);
+}
+
+.btn-contact .bi {
+    margin-right: 0.35rem;
+}
+
+.btn-contact--outline {
+    --bs-btn-color: var(--color-accent);
+    --bs-btn-bg: transparent;
+}
+
+/* The business card to take along: a plain link beside the buttons. */
+.contact-download {
+    margin-left: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--color-ink-muted);
+}
+
+.contact-download:hover,
+.contact-download:focus-visible {
+    color: var(--color-accent);
+}
+
+.contact-download .bi {
+    margin-right: 0.25rem;
+}
