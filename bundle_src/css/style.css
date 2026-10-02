@@ -14,13 +14,6 @@
     }
 }
 
-/* Footer: give the stacked blocks (brand / menu / copyright) some air.
-   The theme only spaces them when the .footer-grid columns are present,
-   which this site's footer doesn't use. */
-#site-footer .footer-col {
-    margin-bottom: 2rem;
-}
-
 /* --------------------------------------------------------------------
    Musician cards (layouts/_shortcodes/card.html)
    -------------------------------------------------------------------- */

@@ -1,10 +1,11 @@
 {{- /*
-  Local override of the theme's footer partial.
+  Local override of the theme's footer partial, laid out like the one of
+  bienensteff.de: brand line, then the columns of .footer-grid (styled by
+  the theme's main.css) with the footer menu and the contact, then the
+  copyright line.
 
-  The theme stylesheet (bundle_src/css/main.css) styles a structured footer
-  via .footer-inner / .footer-brand / .footer-col / .footer-bottom, but the
-  theme's own footer.html only emits a bare inline menu — so #site-footer
-  would render as an unpadded dark strip. This markup matches the existing CSS.
+  The contact is params.contact from hugo.toml; the link below it leads to
+  the contact section of the booking page.
 */ -}}
 <div class="footer-inner container">
   <div class="footer-brand">
@@ -14,24 +15,22 @@
     {{- end }}
   </div>
 
-  {{- with index site.Menus "footer" }}
-    <nav class="footer-col" aria-label="Footer">
-      <ul>
-        {{- range . }}
-          {{- $external := and (strings.HasPrefix .URL "http") (not (strings.HasPrefix .URL site.BaseURL)) }}
-          <li>
-            <a href="{{ .URL }}"
-              {{- if $external }} rel="external noopener noreferrer" target="_blank"{{ end }}
-              {{- if $.IsMenuCurrent .Menu . }} class="active" aria-current="page"{{ end -}}
-            >{{ with .Pre }}{{ . }} {{ end }}{{ .Name }}
-              {{- /* Same marking as the theme's _markup/render-link.html. */ -}}
-              {{- if $external }}&nbsp;<i class="bi bi-box-arrow-up-right external-link-icon" aria-hidden="true"></i><span class="visually-hidden"> (externer Link, öffnet in neuem Tab)</span>{{ end -}}
-            </a>
-          </li>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h6>Links</h6>
+      {{ partial "menu-stock.html" (dict "menuID" "footer" "label" "Footer" "page" .) }}
+    </div>
+
+    {{- with site.Params.contact }}
+      <div class="footer-col">
+        <h6>Kontakt</h6>
+        <address>{{ . | markdownify }}</address>
+        {{- with site.GetPage "/booking" }}
+          <a href="{{ .RelPermalink }}#kontakt">Zur Kontaktseite</a>
         {{- end }}
-      </ul>
-    </nav>
-  {{- end }}
+      </div>
+    {{- end }}
+  </div>
 
   <div class="footer-bottom">
     © {{ now.Year }} {{ site.Title }}
