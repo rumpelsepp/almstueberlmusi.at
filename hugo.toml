@@ -80,6 +80,3 @@ weight = 30
 
   [imaging.jpeg]
     quality = 80
-
-[security]
-  enableInlineShortcodes = true

@@ -1,0 +1,27 @@
+{{- /*
+  The next upcoming events, as a row of tiles like those of the events
+  shortcode.
+
+  The tiles are filled in the browser (bundle_src/js/next-events.ts), not
+  at build time: which events are still to come depends on the day the
+  page is viewed, not on the day it was built. data/events.json is
+  published for that and its URL handed over in data-events-url.
+
+  The section stays hidden without JavaScript and when nothing is coming
+  up. Named by its heading, it is a landmark screen readers can jump to;
+  role="list" keeps the list a list for VoiceOver, which drops that for
+  lists without markers.
+
+  Params:
+    count  number of events to show (default: 3)
+    title  heading (default: "Nächste Termine")
+*/ -}}
+{{- $json := hugo.Data.events | jsonify | resources.FromString "events.json" | fingerprint -}}
+{{- $id := printf "next-events-%d" .Ordinal -}}
+<section class="next-events" aria-labelledby="{{ $id }}" data-events-url="{{ $json.RelPermalink }}" data-count="{{ .Get "count" | default 3 }}" hidden>
+  <h2 class="next-events-title" id="{{ $id }}">{{ .Get "title" | default "Nächste Termine" }}</h2>
+  <ol class="event-list" role="list"></ol>
+  <p class="next-events-more">
+    <a href="{{ relref . "veranstaltungen" }}">Alle Veranstaltungen <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  </p>
+</section>

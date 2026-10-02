@@ -1,0 +1,48 @@
+{{- /*
+  All events from data/events.json: the upcoming ones as tiles, the soonest
+  first, and below them, toned down and without their date, those of the
+  past twelve months. Older ones are not shown at all.
+
+  The split is made here as of the day the site is built, so the page is
+  right without JavaScript; bundle_src/js/event-list.ts redoes it for the
+  day the page is viewed, as the last build may be a while ago.
+
+  The year of an upcoming event is hidden while it is the current one.
+*/ -}}
+{{- $today := now.Format "2006-01-02" -}}
+{{- $cutoff := (now.AddDate -1 0 0).Format "2006-01-02" -}}
+{{- $year := now.Year -}}
+{{- $upcoming := slice -}}
+{{- $past := slice -}}
+{{- range sort hugo.Data.events.events "date_time" "desc" -}}
+  {{- $day := substr .date_time 0 10 -}}
+  {{- if ge $day $today -}}
+    {{- $upcoming = $upcoming | append . -}}
+  {{- else if ge $day $cutoff -}}
+    {{- $past = $past | append . -}}
+  {{- end -}}
+{{- end -}}
+{{- $id := printf "events-%d" .Ordinal -}}
+<div class="events">
+  <section class="events-upcoming" aria-labelledby="{{ $id }}-upcoming">
+    <h2 id="{{ $id }}-upcoming">Kommende Termine</h2>
+    <ol class="event-list" role="list"{{ if not $upcoming }} hidden{{ end }}>
+      {{- range sort $upcoming "date_time" "asc" }}
+        {{ partial "event.html" (dict "event" . "hideYear" (eq (time.AsTime .date_time).Year $year)) }}
+      {{- end }}
+    </ol>
+    <p class="events-empty"{{ if $upcoming }} hidden{{ end }}>
+      Derzeit sind keine Termine angekündigt. Ihr wollt uns hören?
+      <a href="{{ relref . "booking" }}">Fragt uns an!</a>
+    </p>
+  </section>
+
+  <section class="events-past" aria-labelledby="{{ $id }}-past"{{ if not $past }} hidden{{ end }}>
+    <h2 id="{{ $id }}-past">Vergangene Termine</h2>
+    <ol class="event-list event-list--past" role="list">
+      {{- range $past }}
+        {{ partial "event.html" (dict "event" . "past" true) }}
+      {{- end }}
+    </ol>
+  </section>
+</div>

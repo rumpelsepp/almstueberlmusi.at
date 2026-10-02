@@ -18,10 +18,9 @@ async function runBuild() {
     fs.rmSync(outdir, { recursive: true, force: true });
 
     const ctx = await esbuild.context({
-      // This site has no JS of its own; add a `bundle` entry pointing to
-      // bundle_src/js/main.ts once it does.
       entryPoints: {
         base_bundle: path.resolve('themes/bienensteff/bundle_src/js/main.ts'),
+        bundle: path.resolve('bundle_src/js/main.ts'),
         base_style: path.resolve('themes/bienensteff/bundle_src/css/main.css'),
         style: path.resolve('bundle_src/css/style.css'),
       },

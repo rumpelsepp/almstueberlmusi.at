@@ -1,0 +1,43 @@
+{{- /*
+  One event as a list item: calendar leaf (day over month) next to the
+  name, which links to the event's page if it has one, and a line with
+  weekday, year and place.
+
+  A past event is shown without its date: no leaf, only name and place.
+  The day stays in data-day, bundle_src/js/event-list.ts sorts by it.
+
+  bundle_src/js/next-events.ts builds the same markup in the browser for
+  the home page -- keep the two in step.
+
+  Params (dict):
+    event     entry of data/events.json
+    past      the event is over (default: false)
+    hideYear  render the year hidden (default: false). It is always in the
+              markup, as bundle_src/js/event-list.ts decides anew on the
+              day the page is viewed.
+*/ -}}
+{{- $t := time.AsTime .event.date_time -}}
+{{- $url := strings.TrimSpace (.event.url | default "") -}}
+<li class="event" data-day="{{ $t.Format "2006-01-02" }}">
+  {{- if not .past }}
+  <time class="event-date" datetime="{{ $t.Format "2006-01-02" }}">
+    <span class="event-day">{{ $t.Day }}</span>
+    <span class="event-month">{{ time.Format "Jan" $t | strings.TrimSuffix "." }}</span>
+  </time>
+  {{- end }}
+  <div class="event-body">
+    {{- if $url }}
+      <a class="event-name" href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+        {{- .event.details }}&nbsp;<i class="bi bi-box-arrow-up-right external-link-icon" aria-hidden="true"></i><span class="visually-hidden"> (externer Link, öffnet in neuem Tab)</span>
+      {{- "" }}</a>
+    {{- else }}
+      <span class="event-name">{{ .event.details }}</span>
+    {{- end }}
+    <span class="event-meta">
+      {{- if not .past -}}
+        <span class="event-when">{{ time.Format "Monday" $t }}<span class="event-year"{{ if .hideYear }} hidden{{ end }}> · {{ $t.Year }}</span> · </span>
+      {{- end -}}
+      {{ .event.location -}}
+    </span>
+  </div>
+</li>
