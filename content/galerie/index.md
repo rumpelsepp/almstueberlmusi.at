@@ -8,7 +8,7 @@ Hier findet ihr einige Impressionen von der Almstüberl Musi im Einsatz.
 
 Manchmal treffen wir bei unseren Auftritten ganz besondere Menschen. So zum Beispiel haben wir uns sehr gefreut, [Christian Schartner](http://www.christian-schartner.at/) zu treffen, der wirklich unfassbar schöne Bilder macht von der Welt, wie er sie wahrnimmt. Danke, dass du auch uns so schön aussehen lässt!
 
-{{< gallery caption="Fotos: [Christian Schartner](http://www.christian-schartner.at/)" >}}
+{{< gallery lightbox=true caption="Fotos: [Christian Schartner](http://www.christian-schartner.at/)" >}}
 CS_01.jpeg | Drei Musikanten spielen in einer Holzstube an einem Tisch: Steirische Harmonika, Zither und Bassklarinette
 CS_02.jpeg | Eine Musikantin sitzt lachend am Tisch, vor ihr Weingläser und ein kleiner Blumenstrauß
 CS_04_01.jpeg | Ein Musikant und eine Musikantin sitzen lachend mit Weingläsern an einem Tisch im Freien
