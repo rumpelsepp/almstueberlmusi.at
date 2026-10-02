@@ -1,8 +1,8 @@
 {{- /*
   Local override of the theme's footer partial, laid out like the one of
   bienensteff.de: brand line, then the columns of .footer-grid (styled by
-  the theme's main.css) with the footer menu and the contact, then the
-  copyright line.
+  the theme's main.css) with the two footer menus and the contact. There
+  is no copyright line below them.
 
   The contact is params.contact from hugo.toml; the link below it leads to
   the contact section of the booking page.
@@ -18,7 +18,11 @@
   <div class="footer-grid">
     <div class="footer-col">
       <h6>Links</h6>
-      {{ partial "menu-stock.html" (dict "menuID" "footer" "label" "Footer" "page" .) }}
+      {{ partial "menu-stock.html" (dict "menuID" "footerlinks" "label" "Links" "page" .) }}
+    </div>
+    <div class="footer-col">
+      <h6>Rechtliches</h6>
+      {{ partial "menu-stock.html" (dict "menuID" "footerlegal" "label" "Rechtliches" "page" .) }}
     </div>
 
     {{- with site.Params.contact }}
@@ -30,9 +34,5 @@
         {{- end }}
       </div>
     {{- end }}
-  </div>
-
-  <div class="footer-bottom">
-    © {{ now.Year }} {{ site.Title }}
   </div>
 </div>

@@ -34,21 +34,22 @@ name = "Über uns"
 pageRef = "/über-uns"
 weight = 40
 
-[[menus.footer]]
+# Footer: je ein Menue pro Spalte, siehe layouts/_partials/footer.html.
+[[menus.footerLinks]]
 pre = '<i class="bi bi-instagram" aria-hidden="true"></i>'
 name = 'Instagram'
 URL = 'https://www.instagram.com/almstueberl_musi'
 weight = 10
 
-[[menus.footer]]
+[[menus.footerLegal]]
 name = 'Impressum'
 pageRef = '/impressum'
-weight = 20
+weight = 10
 
-[[menus.footer]]
+[[menus.footerLegal]]
 name = 'Datenschutz'
 pageRef = '/datenschutz'
-weight = 30
+weight = 20
 
 
 [markup]
