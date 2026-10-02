@@ -27,9 +27,7 @@
   {{- end }}
   <div class="event-body">
     {{- if $url }}
-      <a class="event-name" href="{{ $url }}" target="_blank" rel="noopener noreferrer">
-        {{- .event.details }}&nbsp;<i class="bi bi-box-arrow-up-right external-link-icon" aria-hidden="true"></i><span class="visually-hidden"> (externer Link, öffnet in neuem Tab)</span>
-      {{- "" }}</a>
+      {{ partial "link.html" (dict "href" $url "class" "event-name" "text" .event.details) }}
     {{- else }}
       <span class="event-name">{{ .event.details }}</span>
     {{- end }}

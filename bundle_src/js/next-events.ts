@@ -45,7 +45,9 @@ function upcoming(events: Event[], count: number): Event[] {
 }
 
 // The same markup as layouts/_partials/event.html -- keep the two in step.
-function renderEvent(event: Event): HTMLLIElement {
+// externalMark is what the theme appends to external links (icon and a note
+// for screen readers), handed over by the shortcode in a <template>.
+function renderEvent(event: Event, externalMark: DocumentFragment | undefined): HTMLLIElement {
     const date = new Date(event.date_time);
     const item = el("li", "event");
     item.dataset.day = event.date_time.slice(0, 10);
@@ -67,14 +69,9 @@ function renderEvent(event: Event): HTMLLIElement {
         link.href = url;
         link.target = "_blank";
         link.rel = "noopener noreferrer";
-        // Same hint as the theme's render-link hook gives outbound links.
-        const icon = el("i", "bi bi-box-arrow-up-right external-link-icon");
-        icon.setAttribute("aria-hidden", "true");
-        link.append(
-            "\u00a0",
-            icon,
-            el("span", "visually-hidden", " (externer Link, öffnet in neuem Tab)"),
-        );
+        if (externalMark) {
+            link.append(externalMark.cloneNode(true));
+        }
         body.append(link);
     } else {
         body.append(el("span", "event-name", event.details));
@@ -109,7 +106,8 @@ async function initSection(section: HTMLElement): Promise<void> {
     if (events.length === 0) {
         return;
     }
-    list.replaceChildren(...events.map(renderEvent));
+    const externalMark = section.querySelector<HTMLTemplateElement>("template.external-link-mark")?.content;
+    list.replaceChildren(...events.map((event) => renderEvent(event, externalMark)));
     section.hidden = false;
 }
 

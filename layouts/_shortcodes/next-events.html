@@ -21,6 +21,9 @@
 <section class="next-events" aria-labelledby="{{ $id }}" data-events-url="{{ $json.RelPermalink }}" data-count="{{ .Get "count" | default 3 }}" hidden>
   <h2 class="next-events-title" id="{{ $id }}">{{ .Get "title" | default "Nächste Termine" }}</h2>
   <ol class="event-list" role="list"></ol>
+  {{/* What marks a link as external, for the script to append to the links
+       it builds -- the same the theme's link.html appends. */}}
+  <template class="external-link-mark">{{ partial "link-external-mark.html" dict }}</template>
   <p class="next-events-more">
     <a href="{{ relref . "veranstaltungen" }}">Alle Veranstaltungen <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
   </p>
