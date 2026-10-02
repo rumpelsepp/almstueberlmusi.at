@@ -5,7 +5,7 @@ params:
     images: [CS_03_Visitenkarte02-cropped.jpeg]
 ---
 
-{{< fig src="CS_03_Visitenkarte02-cropped.jpeg" width="900" caption="Foto: [Christian Schartner](http://www.christian-schartner.at/)" >}}
+{{< fig src="CS_03_Visitenkarte02-cropped.jpeg" width="900" alt="Die vier Musikant:innen der Almstüberl Musi stehen in Tracht nebeneinander vor einem Bergwald, mit Bassklarinette, Gitarre, Zither und Steirischer Harmonika" caption="Foto: [Christian Schartner](http://www.christian-schartner.at/)" >}}
 
 {{< next-events >}}
 

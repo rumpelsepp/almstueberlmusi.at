@@ -38,7 +38,7 @@
   <div class="member-card-body">
     <h3 class="member-card-name">{{ $title }}</h3>
     {{ with .Get "footer" }}
-      <ul class="member-card-roles">
+      <ul class="member-card-roles" role="list">
         {{- range split . "·" }}
           {{- with strings.TrimSpace . }}<li>{{ . }}</li>{{ end }}
         {{- end }}

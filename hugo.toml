@@ -29,7 +29,7 @@ pageRef = "/über-uns"
 weight = 40
 
 [[menus.footer]]
-pre = '<i class="bi bi-instagram"></i>'
+pre = '<i class="bi bi-instagram" aria-hidden="true"></i>'
 name = 'Instagram'
 URL = 'https://www.instagram.com/almstueberl_musi'
 weight = 10
