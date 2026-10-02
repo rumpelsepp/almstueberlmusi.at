@@ -1,8 +1,25 @@
-{{ with .Page.Resources.GetMatch (.Get "src") }}
-    <figure>
-        <audio controls preload="auto" src="{{ .RelPermalink }}"></audio>
-        {{ with $.Get "caption" }}
-            <figcaption>{{ . }}</figcaption>
-        {{ end }}
-    </figure>
-{{ end }}
+{{- /*
+  Audio sample from the page bundle.
+
+  Rendered as a plain <audio controls>, which is what there is without
+  JavaScript; bundle_src/js/audio-player.ts replaces the browser's controls
+  with a player in the look of the site (.audio-player in style.css).
+
+  preload="metadata": the length is known right away, the file itself is
+  only fetched when somebody presses play.
+
+  Params:
+    src      audio file in the page bundle (required)
+    caption  title of the recording
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- with .Page.Resources.GetMatch $src }}
+<figure class="audio-player">
+  <audio controls preload="metadata" src="{{ .RelPermalink }}"></audio>
+  {{- with $.Get "caption" }}
+  <figcaption class="audio-player-title">{{ . }}</figcaption>
+  {{- end }}
+</figure>
+{{- else }}
+  {{- warnf "shortcode audio: no resource matching %q in %s" $src .Page.Path }}
+{{- end }}

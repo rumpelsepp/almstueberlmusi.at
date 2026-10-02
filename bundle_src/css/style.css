@@ -234,3 +234,137 @@ article.content .events-upcoming h2 {
 .events-past {
     margin-top: 3rem;
 }
+
+/* --------------------------------------------------------------------
+   Audio sample (layouts/_shortcodes/audio.html, controls built by
+   bundle_src/js/audio-player.ts)
+   -------------------------------------------------------------------- */
+
+.audio-player {
+    max-width: 34rem;
+    margin: 0 0 1.5rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-sm);
+    text-align: left;
+    hyphens: none;
+}
+
+/* Without JavaScript: the browser's own player under the title. */
+.audio-player audio {
+    display: block;
+    width: 100%;
+}
+
+.audio-player-title {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.audio-player:not(.audio-player--enhanced) .audio-player-title {
+    margin-top: 0.5rem;
+}
+
+/* Round play button on the left; title over slider and time beside it. */
+.audio-player--enhanced {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+        "toggle title title"
+        "toggle seek  time";
+    align-items: center;
+    gap: 0.25rem 1rem;
+}
+
+.audio-player--enhanced audio {
+    display: none;
+}
+
+.audio-player--enhanced .audio-player-title {
+    grid-area: title;
+}
+
+.audio-player-toggle {
+    grid-area: toggle;
+    display: grid;
+    place-items: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: #fff;
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.12s ease;
+}
+
+.audio-player-toggle:hover {
+    background: color-mix(in srgb, var(--color-accent) 85%, #000);
+}
+
+.audio-player-toggle:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+/* The play triangle looks off-centre when centred by its box. */
+.audio-player-toggle .bi-play-fill {
+    margin-left: 0.12em;
+}
+
+.audio-player-seek {
+    grid-area: seek;
+    width: 100%;
+    min-width: 0;
+    accent-color: var(--color-accent);
+    cursor: pointer;
+}
+
+.audio-player-time {
+    grid-area: time;
+    font-size: 0.875rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-ink-muted);
+    white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------
+   List of recordings: a markdown list marked {.track-list}; the emphasised
+   part of an entry (the line-up) becomes a chip like the instruments on
+   the musician cards.
+   -------------------------------------------------------------------- */
+
+article.content .track-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    hyphens: none;
+}
+
+.track-list li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.track-list li:first-child {
+    border-top: 1px solid var(--color-border);
+}
+
+.track-list em {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0.15rem 0.7rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
+    color: var(--color-accent);
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+}

@@ -15,13 +15,14 @@ Uns geht es vor allem darum, eine feine Zeit mit unserer Almstüberl Musi zu hab
 {{< audio src="livemitschnitt.mp3" caption="Livemitschnitt 2025" >}}
 
 Wir haben es noch nicht geschafft einen eigenen Tonträger aufzunehmen. Aber wir freuen uns sehr, dass wir die Möglichkeit bekommen haben, Archivaufnahmen mit dem Radio Salzburg zu machen. 
-Wenn ihr Lust habt uns zu hören, freuen wir uns, wenn ihr [hier](https://kontakt.orf.at/oesterreich/salzburg/salzburg-formular116.html) einen Musikwunsch abgebt. 
+Wenn ihr Lust habt uns zu hören, freuen wir uns, wenn ihr [einen Musikwunsch abgebt](https://kontakt.orf.at/oesterreich/salzburg/salzburg-formular116.html). 
 
 Aufgenommen haben wir die folgenden Stücke: 
 
-- Lustig uma draht (Peter Züger) -- *Stubnmusi-Besetzung*
-- I hob a Dianei gliabt (Volksweise) -- *Stubnmusi-Besetzung*
-- A blaus Auto ([Gottfried Hartl](https://www.gottfried-hartl.net/startseite.html)) -- *Saitenmusi-Besetzung*
+- Lustig uma draht (Peter Züger) *Stubnmusi-Besetzung*
+- I hob a Dianei gliabt (Volksweise) *Stubnmusi-Besetzung*
+- A blaus Auto ([Gottfried Hartl](https://www.gottfried-hartl.net/startseite.html)) *Saitenmusi-Besetzung*
+{.track-list}
 
 ## Die Musikant:innen
 

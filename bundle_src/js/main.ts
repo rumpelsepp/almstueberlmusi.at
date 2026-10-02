@@ -1,6 +1,8 @@
+import { initAudioPlayers } from "./audio-player";
 import { initEventLists } from "./event-list";
 import { initNextEvents } from "./next-events";
 
+initAudioPlayers();
 initEventLists();
 
 try {
