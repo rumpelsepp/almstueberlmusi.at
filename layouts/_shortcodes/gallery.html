@@ -1,0 +1,50 @@
+{{- /*
+  Photo gallery: the images in rows of equal height, each row filling the
+  width (.gallery in style.css). A click opens the image large in a
+  lightbox (bundle_src/js/lightbox.ts); without JavaScript the link simply
+  leads to the large image.
+
+  The body of the shortcode lists one image of the page bundle per line,
+  optionally followed by its alt text:
+
+    one.jpeg | What is to be seen on it
+    two.jpeg
+
+  The large image is a copy scaled down to 2400px, not the original: those
+  come straight from the camera, at up to 15 MB each.
+
+  Params:
+    caption  caption for the whole gallery, markdown (optional)
+*/ -}}
+{{- $page := .Page -}}
+<figure class="gallery-figure">
+  <ul class="gallery" role="list">
+    {{- range split (strings.TrimSpace .Inner) "\n" }}
+      {{- $parts := split . "|" }}
+      {{- $src := strings.TrimSpace (index $parts 0) }}
+      {{- $alt := "" }}
+      {{- if gt (len $parts) 1 }}{{ $alt = strings.TrimSpace (index $parts 1) }}{{ end }}
+      {{- if $src }}
+        {{- $img := $page.Resources.GetMatch $src }}
+        {{- if and $img (reflect.IsImageResourceProcessable $img) }}
+          {{- $img = $img.Filter images.AutoOrient }}
+          {{- $large := $img.Fit (printf "2400x2400 %s" (site.Params.imageFormat | default "webp")) }}
+    <li class="gallery-item" style="--ratio: {{ div (float $img.Width) $img.Height | printf "%.4f" }}">
+      <a href="{{ $large.RelPermalink }}" aria-label="{{ $alt | default "Bild" }} – groß ansehen">
+        {{- partial "image/img.html" (dict
+          "image" $img
+          "alt" $alt
+          "sizes" "(max-width: 575.98px) 100vw, (max-width: 991.98px) 50vw, 400px"
+        ) -}}
+      </a>
+    </li>
+        {{- else }}
+          {{- warnf "shortcode gallery: no processable image matching %q in %s" $src $page.Path }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+  </ul>
+  {{- with .Get "caption" }}
+  <figcaption class="figure-caption text-center">{{ . | markdownify }}</figcaption>
+  {{- end }}
+</figure>
