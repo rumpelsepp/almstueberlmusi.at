@@ -1,0 +1,10 @@
+{{- /*
+  Overrides the theme's home.html. The theme prints no h1 on the home page
+  and this site has no hero or the like to bring one, so the page would be
+  left without. It shows no title above its content -- the name is in the
+  navbar already --, hence an h1 only screen readers and search engines see.
+*/ -}}
+{{ define "content" }}
+    <h1 class="visually-hidden">{{ .Title }}</h1>
+    {{ .Content }}
+{{ end }}
