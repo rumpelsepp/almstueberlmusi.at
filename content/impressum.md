@@ -2,9 +2,13 @@
 title: Impressum
 ---
 
+## Medieninhaber
+
+Almstüberl Musi  
 Rupert Pirchner  
 Niederuntersberg 6c  
 5621 St. Veit im Pongau  
+Österreich
 
 ## Kontakt
 
@@ -13,6 +17,4 @@ E-Mail: rpirchner@gmx.at
 
 ## Verantwortlich für den Inhalt
 
-Karin Oberauer  
-Rupertgasse 2  
-5550 Radstadt
+Karin Oberauer
