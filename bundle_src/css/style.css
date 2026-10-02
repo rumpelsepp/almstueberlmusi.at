@@ -8,12 +8,6 @@
     --bs-link-hover-color-rgb: 8, 66, 152;
 }
 
-#site-header {
-    .navbar .navbar-nav .nav-item .nav-link {
-        --bs-nav-link-font-size: 1.2rem;
-    }
-}
-
 /* Footer: the columns are the last thing in it, so the rule the theme
    draws between them and a copyright line goes. */
 #site-footer .footer-grid {
