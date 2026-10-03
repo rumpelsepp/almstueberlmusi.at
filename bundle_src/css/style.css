@@ -6,6 +6,27 @@
     --bs-link-color-rgb: 10, 88, 202;
     --bs-link-hover-color: #084298;
     --bs-link-hover-color-rgb: 8, 66, 152;
+
+    /* Text and icons on the accent colour (date leaf, play button, contact
+       buttons). */
+    --color-accent-ink: #fff;
+}
+
+/* Dark mode (params.darkMode): Bootstrap's lighter shades of the blue for
+   links, 7.5:1 on the dark page background. The theme's accent is a light
+   green there, so what stands on it turns dark. */
+[data-bs-theme="dark"] {
+    --bs-link-color: #6ea8fe;
+    --bs-link-color-rgb: 110, 168, 254;
+    --bs-link-hover-color: #8bb9fe;
+    --bs-link-hover-color-rgb: 139, 185, 254;
+    --color-accent-ink: #1b1916;
+}
+
+/* The logo in the navbar is black line art, which the dark navbar
+   swallows: there it is turned white. */
+[data-bs-theme="dark"] .navbar-brand-logo {
+    filter: invert(1);
 }
 
 /* Footer: the columns are the last thing in it, so the rule the theme
@@ -168,7 +189,7 @@ article.content .member-card-name {
     padding: 0.45rem 0;
     border-radius: var(--radius-md);
     background: var(--color-accent);
-    color: #fff;
+    color: var(--color-accent-ink);
     line-height: 1.1;
 }
 
@@ -300,7 +321,7 @@ article.content .events-upcoming h2 {
     border: 0;
     border-radius: 50%;
     background: var(--color-accent);
-    color: #fff;
+    color: var(--color-accent-ink);
     font-size: 1.75rem;
     line-height: 1;
     cursor: pointer;
@@ -392,13 +413,13 @@ article.content .track-list {
     --bs-btn-padding-x: 1.1rem;
     --bs-btn-padding-y: 0.55rem;
     --bs-btn-font-weight: 600;
-    --bs-btn-color: #fff;
+    --bs-btn-color: var(--color-accent-ink);
     --bs-btn-bg: var(--color-accent);
     --bs-btn-border-color: var(--color-accent);
-    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-color: var(--color-accent-ink);
     --bs-btn-hover-bg: color-mix(in srgb, var(--color-accent) 85%, #000);
     --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
-    --bs-btn-active-color: #fff;
+    --bs-btn-active-color: var(--color-accent-ink);
     --bs-btn-active-bg: var(--bs-btn-hover-bg);
     --bs-btn-active-border-color: var(--bs-btn-hover-bg);
 }
