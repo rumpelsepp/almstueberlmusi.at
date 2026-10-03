@@ -9,8 +9,9 @@ description = 'Echte Volksmusik aus dem gesamten Alpenland'
 # Kontaktblock im Footer (layouts/_partials/footer.html), Markdown.
 contact = """Rupert Pirchner
 
-<i class="bi bi-telephone" aria-hidden="true"></i> [+43 664 8987056](tel:+436648987056)  
-<i class="bi bi-envelope" aria-hidden="true"></i> [rpirchner@gmx.at](mailto:rpirchner@gmx.at)
+[+43 664 8987056](tel:+436648987056)
+
+[rpirchner@gmx.at](mailto:rpirchner@gmx.at)
 """
 
 [menus]
@@ -36,7 +37,6 @@ weight = 40
 
 # Footer: je ein Menue pro Spalte, siehe layouts/_partials/footer.html.
 [[menus.footerLinks]]
-pre = '<i class="bi bi-instagram" aria-hidden="true"></i>'
 name = 'Instagram'
 URL = 'https://www.instagram.com/almstueberl_musi'
 weight = 10
