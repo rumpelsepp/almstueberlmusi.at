@@ -13,14 +13,6 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <!-- The tab icon on a dark tab bar: the black lines turn light. Only in
-       this file; the logo in the navbar is assets/logo.svg, which the
-       page's own dark mode inverts. -->
-  <style>
-    @media (prefers-color-scheme: dark) {
-      * { fill: #f2efe9 !important; }
-    }
-  </style>
   <sodipodi:namedview
      id="namedview42"
      pagecolor="#ffffff"

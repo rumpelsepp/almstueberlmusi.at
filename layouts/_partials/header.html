@@ -1,4 +1,8 @@
-{{- $logo := resources.Get "favicon.svg" }}
+{{- /* The logo is the favicon's drawing in black: favicon.svg itself turns
+     light where the system is dark, which is right for a tab bar but not
+     for a navbar that may still be light (without JavaScript). The logo
+     is turned by the page's own dark mode, see bundle_src/css/style.css. */ -}}
+{{- $logo := resources.Get "logo.svg" }}
 
 <div class="site-nav-bar">
   {{ partial "menu-bootstrap.html" (dict "menuID" "main" "page" . "brand" $logo "brandText" site.Title) }}
