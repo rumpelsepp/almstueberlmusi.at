@@ -1,5 +1,9 @@
 baseURL = 'https://almstueberlmusi.at/'
 locale = 'de-AT'
+enableRobotsTXT = true
+# Die Seite hat weder Tags noch Kategorien; ohne das baut Hugo die leeren
+# Seiten /tags/ und /categories/.
+disableKinds = ['taxonomy', 'term']
 
 title = 'Almstüberl Musi'
 theme = "bienensteff"
