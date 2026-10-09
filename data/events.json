@@ -1,6 +1,13 @@
 {
   "events": [
     {
+      "date_time": "2027-02-05T00:00:00",
+      "details": "Lange Nacht der Volksmusik",
+      "location": "5020 Salzburg",
+      "url": null,
+      "next": false
+    },
+    {
       "date_time": "2026-12-13T00:00:00",
       "details": "Zeller Adventkonzert des KIWANIS Club Zell am See",
       "location": "5700 Zell am See",
