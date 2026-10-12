@@ -1,13 +1,13 @@
 hugo := "./themes/bienensteff/scripts/hugo"
 
-npm-build:
-    npm run build
+npm-build *args:
+    npm run build -- {{ args }}
 
 # --gc drops image variants nothing references any more from resources/_gen
 build: clean npm-build
     {{ hugo }} build --gc
 
-serve: npm-build
+serve: (npm-build "--sourcemap")
     {{ hugo }} server --buildDrafts --disableFastRender
 
 deploy: build
