@@ -1,23 +1,20 @@
-hugo := "./themes/bienensteff/scripts/hugo"
+# The recipes every site shares (npm-build, build, serve, clean,
+# podman-pull, check-links); a recipe below under the same name replaces
+# the theme's.
+import 'themes/bienensteff/justfile'
 
-npm-build *args:
-    npm run build -- {{ args }}
+# For the recipes here that replace one of the theme's.
+set allow-duplicate-recipes
 
-# --gc drops image variants nothing references any more from resources/_gen
-build: clean npm-build
-    {{ hugo }} build --gc
+# List all recipes
+default:
+    @just --list --unsorted
 
 serve: (npm-build "--sourcemap")
     {{ hugo }} server --buildDrafts --disableFastRender
 
 deploy: build
     rsync -avz --delete public/ deploy@almstueberlmusi.at:/srv/http/deploy/almstueberlmusi.at
-
-clean:
-    rm -rf public
-
-podman-pull:
-    podman pull ghcr.io/gohugoio/hugo:latest
 
 update-events:
     ./scripts/update-events.py > data/events.json
