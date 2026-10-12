@@ -16,13 +16,6 @@
     filter: invert(1);
 }
 
-/* Footer: the columns are the last thing in it, so the rule the theme
-   draws between them and a copyright line goes. */
-#site-footer .footer-grid {
-    padding-bottom: 0;
-    border-bottom: 0;
-}
-
 /* --------------------------------------------------------------------
    Musician cards (layouts/_shortcodes/card.html)
    -------------------------------------------------------------------- */

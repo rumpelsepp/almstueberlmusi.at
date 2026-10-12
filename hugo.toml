@@ -14,13 +14,30 @@ description = 'Echte Volksmusik aus dem gesamten Alpenland'
 # Dunkles Farbschema, wenn das System des Besuchers auf dunkel steht. Es gibt
 # keinen Schalter auf der Seite.
 darkMode = true
-# Kontaktblock im Footer (layouts/_partials/footer.html), Markdown.
+# Kontaktblock im Footer, Markdown.
 contact = """Rupert Pirchner
 
 [+43 664 8987056](tel:+436648987056)
 
 [rpirchner@gmx.at](mailto:rpirchner@gmx.at)
 """
+
+# Footer (Partial footer.html des Themes), ohne Copyright-Zeile.
+[params.footer]
+brand = true
+
+[[params.footer.columns]]
+title = 'Links'
+menu = 'footerLinks'
+
+[[params.footer.columns]]
+title = 'Rechtliches'
+menu = 'footerLegal'
+
+[[params.footer.columns]]
+title = 'Kontakt'
+contact = true
+link = '/booking#kontakt'
 
 [menus]
 [[menus.main]]
