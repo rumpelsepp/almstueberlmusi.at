@@ -1,4 +1,5 @@
 baseURL = 'https://almstueberlmusi.at/'
+defaultContentLanguage = 'de'
 locale = 'de-AT'
 enableRobotsTXT = true
 # Die Seite hat weder Tags noch Kategorien; ohne das baut Hugo die leeren
