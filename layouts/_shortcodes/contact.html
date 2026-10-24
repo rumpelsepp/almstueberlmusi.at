@@ -32,7 +32,7 @@
     {{ partial "image/img.html" (dict
       "image" .
       "alt" $name
-      "sizes" "(max-width: 767.98px) 100vw, 300px"
+      "sizes" "(width < 768px) 100vw, 300px"
     ) }}
   </div>
   {{- end }}
@@ -46,14 +46,14 @@
     </div>
     <p class="contact-actions">
       {{- with .Get "phone" }}
-      <a class="btn btn-contact" href="tel:{{ replace . " " "" }}"><i class="bi bi-telephone-fill" aria-hidden="true"></i> {{ . }}</a>
+      <a class="btn btn-contact" href="tel:{{ replace . " " "" }}">{{ partial "icon.html" "telephone-fill" }} {{ . }}</a>
       {{- end }}
       {{- with .Get "email" }}
-      <a class="btn btn-contact btn-contact--outline" href="mailto:{{ . }}"><i class="bi bi-envelope-fill" aria-hidden="true"></i> {{ . }}</a>
+      <a class="btn btn-contact btn-contact--outline" href="mailto:{{ . }}">{{ partial "icon.html" "envelope-fill" }} {{ . }}</a>
       {{- end }}
       {{- with .Get "card" }}
         {{- with $.Page.Resources.GetMatch . }}
-      <a class="contact-download" href="{{ .RelPermalink }}" download="{{ printf "Visitenkarte %s%s" site.Title (path.Ext .Name) }}"><i class="bi bi-download" aria-hidden="true"></i> Visitenkarte herunterladen ({{ path.Ext .Name | strings.TrimPrefix "." | upper }})</a>
+      <a class="contact-download" href="{{ .RelPermalink }}" download="{{ printf "Visitenkarte %s%s" site.Title (path.Ext .Name) }}">{{ partial "icon.html" "download" }} Visitenkarte herunterladen ({{ path.Ext .Name | strings.TrimPrefix "." | upper }})</a>
         {{- else }}
           {{- warnf "shortcode contact: no resource matching %q in %s" . $.Page.Path }}
         {{- end }}

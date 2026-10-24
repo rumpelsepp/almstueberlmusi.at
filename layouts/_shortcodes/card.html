@@ -31,7 +31,7 @@
       {{ partial "image/img.html" (dict
         "image" .
         "alt" $title
-        "sizes" "(max-width: 767.98px) 100vw, 300px"
+        "sizes" "(width < 768px) 100vw, 300px"
       ) }}
     </div>
   {{ end }}
