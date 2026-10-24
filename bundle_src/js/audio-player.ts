@@ -2,6 +2,10 @@
 // layouts/_shortcodes/audio.html with a play button, a seek slider and the
 // time, styled by .audio-player in bundle_src/css/style.css.
 
+import pauseFill from "bootstrap-icons/icons/pause-fill.svg";
+import playFill from "bootstrap-icons/icons/play-fill.svg";
+import { icon } from "../../themes/bienensteff/bundle_src/js/icon";
+
 const PLAYER = "figure.audio-player";
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, className: string): HTMLElementTagNameMap[K] {
@@ -28,9 +32,12 @@ function initPlayer(player: HTMLElement): void {
 
     const toggle = el("button", "audio-player-toggle");
     toggle.type = "button";
-    const icon = el("i", "bi bi-play-fill");
-    icon.setAttribute("aria-hidden", "true");
-    toggle.append(icon);
+    // Both icons are there; the hidden attribute shows the one that fits.
+    const play = icon(playFill);
+    play.classList.add("bi", "bi-play-fill");
+    const pause = icon(pauseFill);
+    pause.classList.add("bi", "bi-pause-fill");
+    toggle.append(play, pause);
 
     const seek = el("input", "audio-player-seek");
     seek.type = "range";
@@ -43,7 +50,8 @@ function initPlayer(player: HTMLElement): void {
 
     function update(): void {
         const playing = !audio!.paused && !audio!.ended;
-        icon.className = playing ? "bi bi-pause-fill" : "bi bi-play-fill";
+        play.toggleAttribute("hidden", playing);
+        pause.toggleAttribute("hidden", !playing);
         toggle.setAttribute("aria-label", `${title} ${playing ? "anhalten" : "abspielen"}`);
 
         if (Number.isFinite(audio!.duration)) {
