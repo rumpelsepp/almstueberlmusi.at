@@ -301,7 +301,6 @@ article.content .events-upcoming h2 {
   color: var(--color-accent-ink);
   font-size: 1.75rem;
   line-height: 1;
-  cursor: pointer;
   transition: background-color 0.12s ease;
 
   &:hover {
