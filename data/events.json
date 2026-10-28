@@ -8,17 +8,24 @@
       "next": false
     },
     {
+      "date_time": "2026-12-26T00:00:00",
+      "details": "Weihnachtswanderung",
+      "location": "5550 Radstadt",
+      "url": "https://www.radstadt.com/radstadt/top-events/weihnachts-wanderungen/",
+      "next": false
+    },
+    {
+      "date_time": "2026-12-17T00:00:00",
+      "details": "Weihnachtsfeier",
+      "location": "5620 Schwarzach im Pongau",
+      "url": null,
+      "next": false
+    },
+    {
       "date_time": "2026-12-13T00:00:00",
       "details": "Zeller Adventkonzert des KIWANIS Club Zell am See",
       "location": "5700 Zell am See",
       "url": "https://zellamsee.kiwanis.at/veranstaltungen/",
-      "next": false
-    },
-    {
-      "date_time": "2026-12-08T00:00:00",
-      "details": "Werfner Adventsingen",
-      "location": "5450 Werfen",
-      "url": null,
       "next": false
     },
     {
