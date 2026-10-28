@@ -1,7 +1,7 @@
 #!/usr/bin/env -S uv run -s
 
 # /// script
-# requires-python = ">= 3.15"
+# requires-python = ">= 3.14"
 # dependencies = [
 #     "odfdo",
 #     "pydantic",
