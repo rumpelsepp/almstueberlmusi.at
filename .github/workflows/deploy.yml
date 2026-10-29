@@ -39,4 +39,4 @@ jobs:
           if_key_exists: fail
       - name: Deploy it
         run: |
-          rsync -avz --delete public/ deploy@almstueberlmusi.at:almstueberlmusi.at
+          rsync -avz --delete public/ deploy@almstueberlmusi.at:.
