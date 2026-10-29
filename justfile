@@ -14,7 +14,7 @@ serve: (npm-build "--sourcemap")
     {{ hugo }} server --buildDrafts --disableFastRender
 
 deploy: build
-    rsync -avz --delete public/ deploy@almstueberlmusi.at:/srv/http/deploy/almstueberlmusi.at
+    rsync -avz --delete public/ deploy@almstueberlmusi.at:almstueberlmusi.at
 
 update-events:
     ./scripts/update-events.py > data/events.json
